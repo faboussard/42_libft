@@ -1,0 +1,19 @@
+# ninja log v5
+2	134	1698770560046852376	CMakeFiles/untitled.dir/src_main/ft_memset_main.c.o	337e995afb2b08e8
+5	133	1698770560046852376	CMakeFiles/untitled.dir/src/main.c.o	ecd24e4c74851966
+1	73	1698772807108401685	build.ninja	52a0015686c463b2
+1	121	1698770560034852233	CMakeFiles/untitled.dir/src/ft_memset.c.o	fea0317dee3a8cc1
+3	115	1698770560030852184	CMakeFiles/untitled.dir/src/ft_bzero.c.o	ec9d61c4f59d0fdb
+6	85	1698770559998851801	CMakeFiles/untitled.dir/src_main/ft_bzero_main.c.o	ee52ee66d4de8910
+134	237	1698770560150853619	untitled	87666c910a29a3c1
+1	71	1698772807108401685	build.ninja	52a0015686c463b2
+3	116	1698772807244401976	CMakeFiles/untitled.dir/src/ft_bzero.c.o	ec9d61c4f59d0fdb
+1	120	1698772807248401984	CMakeFiles/untitled.dir/src/ft_memset.c.o	fea0317dee3a8cc1
+5	126	1698772807256402001	CMakeFiles/untitled.dir/src_main/main.c.o	3cf5521c28af83db
+2	138	1698772807264402019	CMakeFiles/untitled.dir/src_main/ft_memset_main.c.o	337e995afb2b08e8
+6	158	1698772807284402061	CMakeFiles/untitled.dir/src_main/ft_bzero_main.c.o	ee52ee66d4de8910
+159	248	1698772807376402258	untitled	32870248d584ca4e
+0	88	1698774042662473050	CMakeFiles/untitled.dir/src_main/ft_bzero_main.c.o	ee52ee66d4de8910
+88	174	1698774042750473180	untitled	32870248d584ca4e
+1	91	1698774067886509938	CMakeFiles/untitled.dir/src_main/ft_bzero_main.c.o	ee52ee66d4de8910
+91	181	1698774067974510067	untitled	32870248d584ca4e
