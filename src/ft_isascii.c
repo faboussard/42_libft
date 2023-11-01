@@ -3,9 +3,9 @@
 //
 #include "../includes/libft.h"
 
-int ft_isalpha(unsigned char c)
+int ft_isascii(unsigned char c)
 {
-    if (c >= 'a' && c <= 'z' || c >= 'A' && c <= 'Z')
+    if (c >= 0 && c <= 127)
         return (1);
     else
         return (0);

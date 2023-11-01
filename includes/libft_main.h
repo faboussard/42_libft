@@ -8,7 +8,11 @@
 #include <string.h>
 #include <stdio.h>
 
-void ft_isalpha_main(int arc, char **arv);
+void ft_isalpha_main();
+void ft_isdigit_main();
+void ft_isalnum_main();
+void ft_isascii_main();
+void ft_isprint_main();
 void ft_strlen_main();
 void ft_bezero_main();
 void ft_memset_main();
@@ -17,5 +21,10 @@ void ft_memmove_main();
 void ft_strlcpy_main();
 void ft_strlcat_main();
 void ft_strdup_main();
+void ft_toupper_main();
+void ft_tolower_main();
+void ft_strchr_main();
+void ft_strrchr_main();
+void ft_strncmp_main();
 
 #endif //LIBFT_V2_LIBFT_MAIN_H

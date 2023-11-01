@@ -1,3 +1,0 @@
-/home/emip/libft/cmake-build-debug/CMakeFiles/untitled.dir
-/home/emip/libft/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/emip/libft/cmake-build-debug/CMakeFiles/rebuild_cache.dir

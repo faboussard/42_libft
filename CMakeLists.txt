@@ -13,4 +13,19 @@ add_executable(untitled src_main/ft_memset_main.c
         src/ft_memcpy.c
         src_main/ft_memcpy_main.c
         src/ft_memmove.c
-        src_main/ft_memmove_main.c src_main/ft_strdup_main.c src/ft_strdup.c src/ft_strlcpy.c src_main/ft_strlcpy_main.c src_main/ft_strlcat_main.c src/ft_strlcat.c src/strlen.c src_main/ft_strlen_main.c src/ft_isalpha.c src_main/ft_isalpha_main.c)
+        src_main/ft_memmove_main.c src_main/ft_strdup_main.c src/ft_strdup.c src/ft_strlcpy.c src_main/ft_strlcpy_main.c src_main/ft_strlcat_main.c src/ft_strlcat.c src/ft_strlen.c src_main/ft_strlen_main.c src/ft_isalpha.c src_main/ft_isalpha_main.c
+        src/ft_isascii.c
+        src/ft_isdigit.c
+        src/ft_isprint.c
+        src/ft_isalnum.c
+        src/ft_toupper.c
+        src/ft_tolower.c
+        src/fr_strchr.c
+        src_main/ft_strchr_main.c
+        src_main/ft_isprint_main.c
+        src_main/ft_toupper_main.c
+        src_main/ft_tolower_main.c
+        src/fr_strrchr.c
+        src_main/ft_strrchr_main.c
+        src_main/ft_strncmp_main.c
+        src/ft_strncmp.c)

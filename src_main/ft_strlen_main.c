@@ -8,5 +8,5 @@
 void ft_strlen_main()
 {
     char string[] = "hello";
-    printf("%d", ft_strlen(string));
+    printf("ft_strlen is %d\n", ft_strlen(string));
 }

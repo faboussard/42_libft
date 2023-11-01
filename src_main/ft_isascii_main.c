@@ -5,7 +5,7 @@
 #include "../includes/libft.h"
 #include "../includes/libft_main.h"
 
-void ft_isalpha_main()
+void ft_isascii_main()
 {
-    printf("ft_isalpha is %d\n", ft_isalpha('b'));
+    printf("ft_isascii %d\n", ft_isascii('b'));
 }
