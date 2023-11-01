@@ -13,7 +13,7 @@ void ft_memmove_main()
     printf("dest for s1 is %s\n", s1);
     printf("dest for s3 is %s\n", s3);
     ft_memmove(s1, s2, 10);
-    memmove(s3, s4, 10);
+    memmove(s3, s4, 11);
     printf("with ft_memmove, dest is now %s\n", s1);
     printf("with memmove, dest is now %s\n", s3);
 }
