@@ -8,6 +8,7 @@
 #include <string.h>
 #include <stdio.h>
 
+void ft_isalpha_main(int arc, char **arv);
 void ft_strlen_main();
 void ft_bezero_main();
 void ft_memset_main();

@@ -6,9 +6,12 @@
 
 void ft_strlcat_main()
 {
-    char str1[] = "World";
-    char str2[] = "hello, ";
-    size_t len = ft_strlcat(str1, str2, sizeof(str2));
+
+    size_t len_str2;
+    char str1[100] = "World";
+    char str2[100] = "hello,";
+    len_str2 = (ft_strlen(str2) + 1);
+    size_t len = ft_strlcat(str2, str1, len_str2);
     printf("%zu\n", len);
-    printf("%s\n", str2);
+    printf("%zu\n", len_str2);
 }

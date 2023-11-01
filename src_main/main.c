@@ -5,13 +5,14 @@
 
 int main()
 {
+    ft_isalpha_main(int arc, char **arv);
     //ft_memset_main();
     //ft_bezero_main();
     //ft_memcpy_main();
     //ft_memmove_main();
     //ft_strlcpy_main();
     //ft_strlen_main();
-    ft_strlcat_main();
+    //ft_strlcat_main();
     //ft_strdup_main();
     return 0;
 }
