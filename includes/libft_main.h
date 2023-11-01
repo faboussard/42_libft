@@ -9,5 +9,7 @@
 #include <stdio.h>
 void ft_bezero_main();
 void ft_memset_main();
+void ft_memcpy_main();
+void ft_memmove_main();
 
 #endif //LIBFT_V2_LIBFT_MAIN_H

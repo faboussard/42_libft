@@ -9,4 +9,8 @@ add_executable(untitled src_main/ft_memset_main.c
         src/ft_bzero.c
         src_main/ft_bzero_main.c
         includes/libft_main.h
-        src_main/main.c)
+        src_main/main.c
+        src/ft_memcpy.c
+        src_main/ft_memcpy_main.c
+        src/memmove.c
+        src_main/ft_memmove_main.c)
