@@ -5,7 +5,7 @@
 #include "../includes/libft.h"
 #include "../includes/libft_main.h"
 
-void ft_isalpha_main()
+void ft_isdigit_main()
 {
-    printf("ft_isalpha is %d\n", ft_isalpha('b'));
+    printf("ft_is_digit is %d\n", ft_isalpha('b'));
 }

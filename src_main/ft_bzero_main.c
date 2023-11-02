@@ -38,5 +38,5 @@ void ft_bezero_main()
         n++;
     }
     if (ok == 0)
-        printf("ok bezerot")*/
+        printf("ok bezero")*/
 }

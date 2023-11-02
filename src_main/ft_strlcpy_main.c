@@ -10,6 +10,6 @@ void ft_strlcpy_main()
     char    dest[100];
     const char *src = "hello,you"; //10 char avec le vide
     size_t len = ft_strlcpy(dest, src, sizeof(dest));
-    printf("%zu\n", len);
+    printf("ft_strlcpy is %zu\n", len);
     printf("%s\n", dest);
 }
