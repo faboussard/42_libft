@@ -28,4 +28,12 @@ add_executable(untitled src_main/ft_memset_main.c
         src/fr_strrchr.c
         src_main/ft_strrchr_main.c
         src_main/ft_strncmp_main.c
-        src/ft_strncmp.c)
+        src/ft_strncmp.c
+        src/ft_memchr.c
+        src/ft_memchr.c
+        src_main/ft_isascii_main.c
+        src_main/ft_memchr_main.c
+        src/ft_memcmp.c
+        src_main/ft_memcmp_main.c
+        src/fr_strnstr.c
+        src_main/ft_strnstr_main.c)

@@ -23,6 +23,9 @@ int main()
     //ft_tolower_main();
     //ft_strchr_main();
     //ft_strrchr_main();
-    ft_strncmp_main();
+    //ft_strncmp_main();
+    //ft_memchr_main();
+    //ft_memcmp_main();
+    ft_strnstr_main();
     return 0;
 }

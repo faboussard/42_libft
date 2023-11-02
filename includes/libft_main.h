@@ -26,5 +26,8 @@ void ft_tolower_main();
 void ft_strchr_main();
 void ft_strrchr_main();
 void ft_strncmp_main();
+void ft_memchr_main();
+void ft_memcmp_main();
+void ft_strnstr_main();
 
 #endif //LIBFT_V2_LIBFT_MAIN_H
