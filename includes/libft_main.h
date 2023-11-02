@@ -7,6 +7,8 @@
 
 #include <string.h>
 #include <stdio.h>
+#include <locale.h>
+#include <stdlib.h>
 
 void ft_isalpha_main();
 void ft_isdigit_main();
@@ -29,5 +31,7 @@ void ft_strncmp_main();
 void ft_memchr_main();
 void ft_memcmp_main();
 void ft_strnstr_main();
+void ft_atoi_main();
+void ft_calloc_main();
 
 #endif //LIBFT_V2_LIBFT_MAIN_H

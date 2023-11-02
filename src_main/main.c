@@ -26,6 +26,8 @@ int main()
     //ft_strncmp_main();
     //ft_memchr_main();
     //ft_memcmp_main();
-    ft_strnstr_main();
+    //ft_strnstr_main();
+    //ft_atoi_main();
+    ft_calloc_main();
     return 0;
 }
