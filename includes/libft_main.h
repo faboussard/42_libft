@@ -33,5 +33,6 @@ void ft_memcmp_main();
 void ft_strnstr_main();
 void ft_atoi_main();
 void ft_calloc_main();
+void    ft_substr_main();
 
 #endif //LIBFT_V2_LIBFT_MAIN_H
