@@ -36,4 +36,11 @@ add_executable(untitled src_main/ft_memset_main.c
         src/ft_memcmp.c
         src_main/ft_memcmp_main.c
         src/fr_strnstr.c
-        src_main/ft_strnstr_main.c)
+        src_main/ft_strnstr_main.c
+        src/ft_strjoin.c
+        src_main/ft_strjoin_main.c
+        src_main/ft_strtrim_main.c
+        src/ft_strtrim.c
+        src/ft_substr.c
+        src_main/ft_substr_main.c
+)

@@ -1,6 +1,4 @@
-//
-// Created by emip on 01/11/23.
-//
+
 #include "../includes/libft.h"
 
 int ft_isprint(unsigned char c)

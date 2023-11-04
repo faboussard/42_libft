@@ -29,5 +29,8 @@ void ft_strncmp_main();
 void ft_memchr_main();
 void ft_memcmp_main();
 void ft_strnstr_main();
+void    ft_substr_main();
+void    ft_strjoin_main();
+void    ft_strtrim_main();
 
 #endif //LIBFT_V2_LIBFT_MAIN_H
