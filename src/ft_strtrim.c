@@ -2,52 +2,40 @@
 #include <malloc.h>
 #include "../includes/libft.h"
 
-static const char *ft_strstr (const char *big, const char *little)
+char *ft_strtrim(char const *s1, char const *set)
 {
-    size_t i;
-    size_t j;
-    int found;
+    int len_s1;
+    int len_set;
+    int i;
+    int j;
+    int start;
+    int len_new_string;
+    char *new_string;
 
-    found = 0;
+    len_s1 = ft_strlen(s1);
+    len_set = ft_strlen(set);
+    len_new_string = (len_s1 - len_set);
     i = 0;
     j = 0;
-    if (little[i] == 0)
-        return (&big[i]);
-    else {
-            while (little[i]) {
-                while (big[j]) {
-                    if (little[i] == big[j]) {
-                        found++;
+    start = 0;
+    new_string = malloc(sizeof (char) * len_new_string + 1);
+    if (new_string == NULL)
+        return (0);
+    while (i < len_s1) {
+            while (set[i]) {
+                while (s1[j]) {
+                    if (set[i] == s1[j]) {
+                        start++;
                     }
                     j++;
                 }
                 i++;
             }
         }
-        if (found == i)
-            return (&little[i]);
-        else
-            return (0);
-}
-
-char *ft_strtrim(char const *s1, char const *set)
-{
-    int len_s1;
-    int len_set;
-    int len_new_string;
-    char *new_string;
-    const char *to_trim;
-
-    len_new_string = (len_s1 - len_set);
-
-    new_string = malloc(sizeof (char) * len_new_string);
-    to_trim = ft_strstr(s1, set);
-
-    //S1 sera coucouettoi
-    // set sera toi
-    //newsintr sera coucouet
-    //to trim sera toi
-
+    while (start < )
+        new_string[i] = set[i];
+        i++;
+    }
     new_string[i] = '\0';
     return (new_string);
 }

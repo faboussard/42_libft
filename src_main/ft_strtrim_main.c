@@ -5,9 +5,9 @@
 
 void    ft_strtrim_main()
 {
-    char *s1 = "coucou";
+    char *s1 = "coucoutoi";
     char *s2 = "toi";
-    char *isjoined = ft_strjoin(s1, s2);
+    char *isjoined = ft_strtrim(s1, s2);
     if (isjoined)
     {
         printf("ft_strjoin is %s\n", isjoined);
