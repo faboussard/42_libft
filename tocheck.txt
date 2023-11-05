@@ -1,0 +1,10 @@
+not sure about
+
+ft_calloc - my version says null, the calloc version returns a pointer;
+strlen - check if we return a i or a char;
+
+a faire
+
+makefile
+rearrange order
+check file names

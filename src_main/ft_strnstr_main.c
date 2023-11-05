@@ -4,10 +4,12 @@
 
 #include "../includes/libft.h"
 #include "../includes/libft_main.h"
+#include <strings.h>
 
 void ft_strnstr_main()
 {
-    char string1[] = "couka";
-    char string2[] = "salutcoukacou";
-    printf("ft_strnstr is %s\n", ft_strnstr(string2, string1, 20));
+    char big[] = "coucou";
+    char little[] = "cou";
+    printf("ft_strnstr is %s\n", ft_strnstr(big, little, 20));
+    //printf("strnstr is %s\n", strnstr(big, little, 20));
 }

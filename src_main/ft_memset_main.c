@@ -10,7 +10,6 @@ void ft_memset_main() {
     n = 10;
 
  if (memcmp(ft_memset(s1, c, n), memset(s2, c, n), n) == 0) {
-     //red() green() voir pour creer une fonction red
      printf("ft_memset is OK with memcmp\n");
  }
  else
