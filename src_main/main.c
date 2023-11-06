@@ -30,6 +30,7 @@ int main()
     //ft_substr_main();
     //ft_strjoin_main();
     //ft_strtrim_main();
-    ft_itoa_main();
+    //ft_itoa_main();
+    ft_strmapi_main();
     return 0;
 }

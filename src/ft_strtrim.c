@@ -14,7 +14,7 @@ static int is_substr(char const *s1, char const *set) {
         while (s1[j]) {
             if (set[i] == s1[j])
                 found++;
-            j++;
+           j++;
         }
         i++;
     }
@@ -31,28 +31,25 @@ char *ft_strtrim(char const *s1, char const *set) {
     char *new_string;
 
     len_total_totrim = is_substr(s1, set);
+    if (len_total_totrim == 0)
+        printf ("nothing to trim");
     len_s1 = ft_strlen(s1);
     len_set = ft_strlen(set);
-    len_new_string = (len_s1 - len_total_totrim + 1);
+    len_new_string = (len_s1 - len_total_totrim);
     i = 0;
     j = 0;
-    new_string = malloc(sizeof(char) * len_new_string);
+    new_string = malloc((sizeof(char) * len_new_string) + 1);
     if (new_string == NULL)
         return (0);
-    while (s1[j])
-        {
-            i = 0;
-            if (s1[j] == set[i]) {
-                while (i < len_set) {
-                    if (s1[i + 1] == set[i + 1])
-                        break;
-                    else
-                        new_string[i] = s1[i];
-                }
-                i++;
-            }
-            j++;
+    while (s1[i])
+    {
+       if(!ft_strchr(set, s1[i]))
+       {
+           new_string[j] = s1[i];
+           j++;
+       }
+       i++;
     }
-    new_string[i] = '\0';
+    new_string[i] = '\0'; // ou i + 1 = 0 ?
     return (new_string);
 }
