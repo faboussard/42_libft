@@ -29,6 +29,7 @@ int main()
     //ft_strnstr_main();
     //ft_substr_main();
     //ft_strjoin_main();
-    ft_strtrim_main();
+    //ft_strtrim_main();
+    ft_itoa_main();
     return 0;
 }

@@ -32,5 +32,6 @@ void ft_strnstr_main();
 void    ft_substr_main();
 void    ft_strjoin_main();
 void    ft_strtrim_main();
+void ft_itoa_main();
 
 #endif //LIBFT_V2_LIBFT_MAIN_H

@@ -43,4 +43,8 @@ add_executable(untitled src_main/ft_memset_main.c
         src/ft_strtrim.c
         src/ft_substr.c
         src_main/ft_substr_main.c
+        src/ft_itoa.c
+        src_main/ft_itoa_main.c
+        src_main/ft_atoi_main.c
+        src/ft_atoi.c
 )
