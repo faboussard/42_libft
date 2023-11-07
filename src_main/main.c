@@ -35,6 +35,11 @@ int main()
     //ft_striteri_main();
     //ft_putstr_fd_main();
     //ft_putendl_fd_main();
-    ft_putnbr_fd_main();
+    //ft_putnbr_fd_main();
+    //ft_lstnew_main();
+    //ft_lstadd_front_main();
+    //ft_lstsize_main();
+    ft_lstlast_main();
+    ft_lstlast_main2();
     return 0;
 }

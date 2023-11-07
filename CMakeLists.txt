@@ -59,4 +59,15 @@ add_executable(mylib src_main/ft_memset_main.c
         src_main/ft_putnbr_fd_main.c
         src/ft_lstnew.c
         src/ft_calloc.c
+        src_main/ft_lstnew_main.c
+        src/ft_lstadd_front.c
+        src_main/ft_lstadd_front_main.c
+        src/ft_lstsize.c
+        src_main/ft_lstsize_main.c
+        src_main/ft_isalnum_main.c
+        src_main/ft_digit_main.c
+        src/ft_lstlast.c
+        src_main/ft_lstlast_main.c
+        src_main/ft_lstlast_main2.c
+        src/ft_lstadd_back.c
 )

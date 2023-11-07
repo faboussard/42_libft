@@ -2,12 +2,6 @@
 // Created by juba on 07/11/23.
 //
 
-typedef struct s_list
-{
-    void *content;
-    struct s_list *next
-} t_list;
-
 #include <malloc.h>
 #include "../includes/libft.h"
 

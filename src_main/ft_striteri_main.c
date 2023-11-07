@@ -12,7 +12,7 @@ static char myfunc(unsigned int i, char *c)
 void ft_striteri_main()
 {
     char *s = "coucou";
-    char const *my_new_string;
+    char *my_new_string;
     printf("before ft_striteri is %s\n", s);
     my_new_string = ft_striteri(s, myfunc);
  if (my_new_string) {

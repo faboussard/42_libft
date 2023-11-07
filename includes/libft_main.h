@@ -38,5 +38,10 @@ void ft_striteri_main();
 void ft_putstr_fd_main();
 void ft_putendl_fd_main();
 void ft_putnbr_fd_main();
+void ft_lstnew_main();
+void ft_lstadd_front_main();
+void ft_lstsize_main();
+void ft_lstlast_main();
+void ft_lstlast_main2();
 
 #endif //LIBFT_V2_LIBFT_MAIN_H
