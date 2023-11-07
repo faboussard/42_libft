@@ -43,5 +43,6 @@ void ft_lstadd_front_main();
 void ft_lstsize_main();
 void ft_lstlast_main();
 void ft_lstlast_main2();
+void ft_lstadd_back_main();
 
 #endif //LIBFT_V2_LIBFT_MAIN_H

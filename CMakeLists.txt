@@ -70,4 +70,5 @@ add_executable(mylib src_main/ft_memset_main.c
         src_main/ft_lstlast_main.c
         src_main/ft_lstlast_main2.c
         src/ft_lstadd_back.c
+        src_main/ft_lstadd_back_main.c
 )
