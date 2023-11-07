@@ -34,5 +34,9 @@ void    ft_strjoin_main();
 void    ft_strtrim_main();
 void ft_itoa_main();
 void ft_strmapi_main();
+void ft_striteri_main();
+void ft_putstr_fd_main();
+void ft_putendl_fd_main();
+void ft_putnbr_fd_main();
 
 #endif //LIBFT_V2_LIBFT_MAIN_H

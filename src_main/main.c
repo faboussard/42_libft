@@ -31,6 +31,10 @@ int main()
     //ft_strjoin_main();
     //ft_strtrim_main();
     //ft_itoa_main();
-    ft_strmapi_main();
+    //ft_strmapi_main();
+    //ft_striteri_main();
+    //ft_putstr_fd_main();
+    //ft_putendl_fd_main();
+    ft_putnbr_fd_main();
     return 0;
 }

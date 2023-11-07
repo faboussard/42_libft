@@ -1,21 +1,19 @@
-
 #include <malloc.h>
 #include "../includes/libft.h"
 
-char *ft_substr(char const *s1, unsigned int start, size_t len)
+char *ft_striteri(char *s, char (*f)(unsigned int, char*))
 {
     int i;
     char *new_string;
 
-    new_string = malloc((sizeof (char) * len) + 1);
+    new_string = malloc(sizeof(char) * (ft_strlen(s)) + 1);
     if (new_string == NULL)
         return (0);
     i = 0;
-    while (i < len)
+    while (s[i])
     {
-        new_string[i] = s1[start];
+        new_string[i] = f(i, &s[i]);
         i++;
-        start++;
     }
     new_string[i] = '\0';
     return (new_string);

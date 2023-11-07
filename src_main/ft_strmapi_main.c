@@ -3,7 +3,7 @@
 #include <stdlib.h>
 
 
-char myfunc(unsigned int i, char c)
+static char myfunc(unsigned int i, char c)
 {
     printf("My inner function: index = %d and %c\n", i, c);
     return (c - 32);

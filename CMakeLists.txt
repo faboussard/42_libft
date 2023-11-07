@@ -1,9 +1,9 @@
 cmake_minimum_required(VERSION 3.23.2)
-project(untitled C)
+project(mylib C)
 
 set(CMAKE_C_STANDARD 11)
 
-add_executable(untitled src_main/ft_memset_main.c
+add_executable(mylib src_main/ft_memset_main.c
         src/ft_memset.c
         includes/libft.h
         src/ft_bzero.c
@@ -49,4 +49,11 @@ add_executable(untitled src_main/ft_memset_main.c
         src/ft_atoi.c
         src/ft_strmapi.c
         src_main/ft_strmapi_main.c
+        src_main/ft_striteri_main.c
+        src/ft_striterii.c
+        src/ft_putstr_fd.c
+        src_main/ft_putstr_fd_main.c
+        src_main/ft_putendl_fd_main.c
+        src/ft_putendl_fd.c
+        src/ft_putnbr_fd.c
 )

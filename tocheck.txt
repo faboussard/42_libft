@@ -2,6 +2,9 @@ not sure about
 
 ft_calloc - my version says null, the calloc version returns a pointer;
 strlen - check if we return a i or a char;
+ft_split
+ft_trim
+ft_pustr_fd = where the change
 
 a faire
 
