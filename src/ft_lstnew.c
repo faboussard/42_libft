@@ -7,11 +7,12 @@
 
 t_list *ft_lstnew(void *content)
 {
-    t_list *new_list;
-    new_list = malloc(sizeof(t_list));
-    if (new_list == NULL)
+    t_list *new_element;
+
+    new_element = malloc(sizeof(t_list));
+    if (!new_element)
         return (0);
-    new_list->content = content;
-    new_list->next = NULL;
-    return (new_list);
+    new_element->content = content;
+    new_element->next = NULL;
+    return (new_element);
 }

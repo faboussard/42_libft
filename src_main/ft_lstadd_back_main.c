@@ -14,7 +14,13 @@ void ft_lstadd_back_main()
     new = ft_lstnew(&content_new);
 
     ft_lstadd_back(&lst, new);
-
-    free(new->next);
-    free(new);
+    printf("ft_lstadd_back is %d\n", *(int *)lst->next->content);
+    t_list *current = lst;
+    while (current)
+    {
+        t_list *next = current->next;
+        free(current->content);
+        free(current);
+        current = next;
+    }
 }

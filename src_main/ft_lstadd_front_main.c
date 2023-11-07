@@ -14,7 +14,18 @@ void ft_lstadd_front_main()
     new = ft_lstnew(&content_new);
 
     ft_lstadd_front(&lst, new);
-
-    free(new->next);
-    free(new);
+    printf("ft_lstadd_front is %d\n", *(int *)lst->content);
+    t_list *current = lst;
+    while (current)
+    {
+        t_list *next = current->next;
+        free(current->content);
+        free(current);
+        current = next;
+    }
+    /*
+    free(lst->content);
+    free(lst);
+    free(new->content);
+    free(new);*/
 }

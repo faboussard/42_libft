@@ -6,6 +6,7 @@ ft_split
 ft_trim
 ft_pustr_fd = where the change
 ft_lstadd_front = a revoir le main. et a comprendre !
+ft_isnew :faire un memcpy
 
 a faire
 
