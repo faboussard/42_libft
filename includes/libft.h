@@ -3,6 +3,13 @@
 
 #include <string.h>
 
+typedef struct s_list
+{
+    void *content;
+    struct s_list *next
+} t_list;
+
+int ft_atoi(const char *string);
 int ft_isalpha(unsigned char c);
 int ft_isdigit(unsigned char c);
 int ft_isalnum(unsigned char c);

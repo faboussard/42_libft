@@ -16,6 +16,8 @@ SRCS=ft_atoi.c ft_atoi_base.c ft_bzero.c ft_dup.c ft_isalnum.c \
 	 ft_strrchr.c ft_strrev.c ft_strsplit.c ft_strsplitchrset.c ft_strstr.c \
 	 ft_strsub.c ft_strtrim.c ft_tolower.c ft_toupper.c
 
+BONUS_SRCS=
+
 OBJECTS=ft_atoi.o ft_atoi_base.o ft_bzero.o ft_dup.o ft_isalnum.o \
 		ft_isalpha.o ft_isascii.o ft_isdigit.o ft_islower.o ft_isprint.o \
 		ft_isupper.o ft_itoa.o ft_itoa_base.o ft_lstadd.o ft_lstaddend.o \
@@ -31,6 +33,8 @@ OBJECTS=ft_atoi.o ft_atoi_base.o ft_bzero.o ft_dup.o ft_isalnum.o \
 		ft_strrchr.o ft_strrev.o ft_strsplit.o ft_strsplitchrset.o ft_strstr.o \
 		ft_strsub.o ft_strtrim.o ft_tolower.o ft_toupper.o
 
+BONUS_OBJS=$(BONUS_SRCS:.c=.o)
+
 INCLUDES=./
 
 all: $(NAME)
@@ -45,6 +49,11 @@ clean:
 
 fclean: clean
 	@/bin/rm -f $(NAME)
+
+bonus: $(NAME): $(BONUSES_SRCS) libft.h
+       	@gcc -Wall -Wextra -Werror -I$(INCLUDES) -c $(BONUSES_SRCS)
+       	@ar rc $(NAME) $(OBJECTS) $(BONUS_OBJS)
+       	@ranlib $(NAME)
 
 re: fclean all
 endef

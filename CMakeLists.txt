@@ -50,10 +50,13 @@ add_executable(mylib src_main/ft_memset_main.c
         src/ft_strmapi.c
         src_main/ft_strmapi_main.c
         src_main/ft_striteri_main.c
-        src/ft_striterii.c
+        src/ft_striteri.c
         src/ft_putstr_fd.c
         src_main/ft_putstr_fd_main.c
         src_main/ft_putendl_fd_main.c
         src/ft_putendl_fd.c
         src/ft_putnbr_fd.c
+        src_main/ft_putnbr_fd_main.c
+        src/ft_lstnew.c
+        src/ft_calloc.c
 )
