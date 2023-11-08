@@ -16,7 +16,8 @@ SRCS=ft_atoi.c ft_atoi_base.c ft_bzero.c ft_dup.c ft_isalnum.c \
 	 ft_strrchr.c ft_strrev.c ft_strsplit.c ft_strsplitchrset.c ft_strstr.c \
 	 ft_strsub.c ft_strtrim.c ft_tolower.c ft_toupper.c
 
-BONUS_SRCS=
+BONUS_SRCS=ft_lstnew.c ft_lstadd_front.c ft_lstsize.c ft_lstlast.c ft_lstadd_back.c\
+ 		   ft_lstdelone.c ft_lstclear.c ft_lstiter.c ft_lstmap.c
 
 OBJECTS=ft_atoi.o ft_atoi_base.o ft_bzero.o ft_dup.o ft_isalnum.o \
 		ft_isalpha.o ft_isascii.o ft_isdigit.o ft_islower.o ft_isprint.o \

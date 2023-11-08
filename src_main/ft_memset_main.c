@@ -2,8 +2,8 @@
 #include "../includes/libft_main.h"
 
 void ft_memset_main() {
-    void *s1[19];
-    void *s2[19];
+    int s1[19];
+    int s2[19];
     int c;
     size_t n;
     c = 65;

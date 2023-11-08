@@ -7,6 +7,6 @@
 
 void ft_strlen_main()
 {
-    char string[] = "hello";
-    printf("ft_strlen is %d\n", ft_strlen(string));
+    const char string[] = "hello";
+    printf("ft_strlen is %zu\n", ft_strlen(string));
 }

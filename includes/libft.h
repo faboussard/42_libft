@@ -17,7 +17,7 @@ int ft_isascii(unsigned char c);
 int ft_isprint(unsigned char c);
 int ft_tolower(unsigned char c);
 int ft_toupper(unsigned char c);
-int ft_strlen(char *string);
+size_t ft_strlen(const char *string);
 char *ft_strchr(const char *s, int c);
 char *ft_strrchr(const char *s, int c);
 void *ft_memset(void *s, int c, size_t n);

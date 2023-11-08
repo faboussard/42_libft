@@ -9,8 +9,10 @@ char *ft_memchr(const void *s, int c, size_t n)
 
     found = 0;
     i = 0;
-    unsigned char *byte = (unsigned char *)s;
-    unsigned char mem_c = (unsigned char )c;
+    unsigned char *byte;
+    byte = (unsigned char *)s;
+    unsigned char mem_c;
+    mem_c = (unsigned char )c;
     while (i < n) {
         if (byte[i] == mem_c) {
             found = 1;
