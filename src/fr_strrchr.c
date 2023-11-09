@@ -3,24 +3,18 @@
 // returns a pointer to the last occurence of c
 char *ft_strrchr(const char *s, int c)
 {
-    int i;
-    int found;
+    size_t i;
+    char *result;
 
-    i = 0;
-    while (s[i])
-        i++;
-    found = 0;
+    i = ft_strlen(s);
     while (i > 0)
     {
         if (s[i] == c)
         {
-            found = 1;
-            break;
+            result = ft_strdup(s);
+            return (result);
         }
         i--;
     }
-    if (found == 1)
-        return (&s[i]);
-    else
-        return (0);
+    return (0);
 }

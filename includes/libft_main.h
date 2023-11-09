@@ -15,6 +15,7 @@ void ft_isascii_main();
 void ft_isprint_main();
 void ft_strlen_main();
 void ft_bezero_main();
+void ft_calloc_main();
 void ft_memset_main();
 void ft_memcpy_main();
 void ft_memmove_main();

@@ -1,15 +1,34 @@
 not sure about
 
-ft_calloc - my version says null, the calloc version returns a pointer;
-strlen - check if we return a i or a char;
+ft_itter, aide pour debugguage sur clion
 ft_split
 ft_trim
-ft_pustr_fd = where the change
-ft_lstadd_front = a revoir le main. et a comprendre !
-ft_isnew :faire un memcpy
+last bonus
+
+doute de quand retourner null ou 0, pour mes amlloc et pour ft strchr par ex;
+normalement je dois return null et je return 0
+
+char *ft_strdup(char *string)
+{
+    char *new_string;
+    new_string = malloc(sizeof(char) * *string);
+    if (new_string == NULL)
+        return 0;
+    new_string = string;
+    return (new_string);
+}
+verif strdup avec un ancinen.
+
+revoir  ft_lstaddback
+
+    if (lst != NULL)
+    {
+        if (*lst != NULL)
 
 a faire
 
 makefile
-rearrange order
+check return types and paramteter types
+verifier que tout est la
 check file names
+ (s1[i] != '\0') // toujours preciser le null ou le '\'0 pour comprndre le type de donnees

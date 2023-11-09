@@ -1,6 +1,8 @@
 //
 // Created by fanny on 31/10/23.
 //
+
+//sets the first nbytes of the area starting at s to zero
 #include "../includes/libft.h"
 
 void *ft_bzero(void *s, size_t n)

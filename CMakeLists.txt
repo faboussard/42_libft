@@ -77,4 +77,6 @@ add_executable(mylib src_main/ft_memset_main.c
         src/ft_lstiter.c
         src_main/ft_lstiter_main.c
         src/ft_split.c
+        src_main/ft_calloc_main.c
+        src_main/del.c
 )

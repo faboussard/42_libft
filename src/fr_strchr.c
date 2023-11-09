@@ -4,19 +4,15 @@
 char *ft_strchr(const char *s, int c)
 {
     int i;
-    int found;
+    char *result;
 
-    found = 0;
     i = 0;
-    while (s[i]) {
+    while (s[i] != '\0') {
         if (s[i] == c) {
-            found = 1;
-            break;
+            result = strdup(s);
+            return result;
         }
         i++;
     }
-    if (found == 1)
-        return (&s[i]);
-    else
-        return (0);
+    return (0);
 }

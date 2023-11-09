@@ -6,11 +6,11 @@
 
 void    ft_lstiter(t_list *lst, void (*f)(void *))
 {
-    if (!f)
+    if (f == NULL)
         return;
-    while (lst->next)
+    while (lst->next != NULL)
     {
        f(lst->content);
-       lst = lst->next;
+       lst->content = lst->next->content;
     }
 }

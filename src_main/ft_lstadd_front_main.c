@@ -2,13 +2,6 @@
 #include "../includes/libft.h"
 #include "../includes/libft_main.h"
 
-void   del(void *content)
-{
-    if (content)
-    {
-        free(content);
-    }
-}
 
 void ft_lstadd_front_main()
 {
@@ -26,14 +19,6 @@ void ft_lstadd_front_main()
 
     ft_lstadd_front(&lst, new);
     printf("ft_lstadd_front is %d\n", *(int *)lst->content);
-    ft_lstclear(&lst, del);
-    /*
     ft_lstdelone(lst, del);
-    ft_lstdelone(new, del);
-     */
-    /*
-    free(lst->content);
-    free(lst);
-    free(new->content);
-    free(new);*/
+    ft_lstclear(&lst, del);
 }
