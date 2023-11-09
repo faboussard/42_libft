@@ -1,7 +1,7 @@
 //
 // Created by emip on 01/11/23.
 //
-#include "../includes/libft.h"
+#include "libft.h"
 
 size_t	ft_strlcat(char *dst, const char *src, size_t size)
 {

@@ -1,4 +1,4 @@
-#include "../includes/libft.h"
+#include "libft.h"
 #include <stdlib.h>
 
 //La fonction calloc() alloue la mémoire nécessaire pour un tableau de nmemb éléments de size octets, et renvoie un pointeur vers la mémoire allouée.

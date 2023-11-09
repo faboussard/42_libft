@@ -2,7 +2,7 @@
 // Created by fanny on 01/11/23.
 //
 
-#include "../includes/libft.h"
+#include "libft.h"
 
 int ft_toupper(unsigned char c)
 {

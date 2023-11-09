@@ -2,7 +2,7 @@
 // Created by emip on 01/11/23.
 //
 
-#include "../includes/libft.h"
+#include "../src/libft.h"
 #include "../includes/libft_main.h"
 
 void ft_strlen_main()

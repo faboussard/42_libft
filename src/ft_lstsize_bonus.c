@@ -1,7 +1,7 @@
 //
 // Created by juba on 07/11/23.
 //
-#include "../includes/libft.h"
+#include "libft.h"
 
 int ft_lstsize(t_list *lst)
 {

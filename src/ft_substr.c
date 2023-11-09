@@ -1,6 +1,6 @@
 
 #include <malloc.h>
-#include "../includes/libft.h"
+#include "libft.h"
 
 char *ft_substr(char const *s1, unsigned int start, size_t len)
 {

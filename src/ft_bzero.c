@@ -3,7 +3,7 @@
 //
 
 //sets the first nbytes of the area starting at s to zero
-#include "../includes/libft.h"
+#include "libft.h"
 
 void *ft_bzero(void *s, size_t n)
 {

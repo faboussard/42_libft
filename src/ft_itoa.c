@@ -1,5 +1,5 @@
 #include <malloc.h>
-#include "../includes/libft.h"
+#include "libft.h"
 
 
 int size_n(int n) {

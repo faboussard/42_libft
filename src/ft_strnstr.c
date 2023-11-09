@@ -1,4 +1,4 @@
-#include "../includes/libft.h"
+#include "libft.h"
 
 // returns a pointer on the first occurence of little
 const char *ft_strnstr(const char *big, const char *little, size_t len)

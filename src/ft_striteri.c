@@ -1,5 +1,5 @@
 #include <malloc.h>
-#include "../includes/libft.h"
+#include "libft.h"
 
 char *ft_striteri(char *s, char (*f)(unsigned int, char*))
 {

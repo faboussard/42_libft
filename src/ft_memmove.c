@@ -2,7 +2,7 @@
 // Created by fanny on 31/10/23.
 //
 
-#include "../includes/libft.h"
+#include "libft.h"
 
 void *ft_memmove(void *dest, const void *src, size_t n)
 {

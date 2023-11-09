@@ -1,6 +1,6 @@
 
 #include <malloc.h>
-#include "../includes/libft.h"
+#include "libft.h"
 
 // s1 = toicoutoicoutoitoi
 // set = toi
@@ -44,9 +44,9 @@ char *ft_strtrim(char const *s1, char const *set)
     start = index_start(s1, set);
     len = s1_strlen - end;
     s1_copy_trimmed = ft_substr(s1, start, len);
-    printf("start est %d\n", start);
-    printf("end est %d\n", end);
-    printf("len est %d\n", len);
-    printf("s1_strlen est %d\n", s1_strlen);
+    printf("start est %zu\n", start);
+    printf("end est %zu\n", end);
+    printf("len est %zu\n", len);
+    printf("s1_strlen est %zu\n", s1_strlen);
     return (s1_copy_trimmed);
 }

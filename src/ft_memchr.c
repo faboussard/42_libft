@@ -1,5 +1,5 @@
 
-#include "../includes/libft.h"
+#include "libft.h"
 
 // returns a pointer on the first occurence of c
 char *ft_memchr(const void *s, int c, size_t n)

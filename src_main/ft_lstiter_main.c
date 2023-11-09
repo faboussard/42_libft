@@ -1,13 +1,20 @@
-#include "../includes/libft.h"
-#include "../includes/libft_main.h"
-#include <stdlib.h>
-
+#include "../src/libft.h"
+#include "libft_main.h"
 
 void myfunc(void *content)
 {
-    if (content)
+    char *str;
+    int i;
+
+    if (content != NULL)
     {
-        content += 32;
+        i = 0;
+        str = content;
+        while (str[i] != '\0')
+        {
+            ft_toupper(str[i]);
+            i++;
+        }
     }
 }
 
@@ -17,13 +24,9 @@ void ft_lstiter_main()
     t_list *lst2 = NULL;
     t_list *lst3 = NULL;
 
-    char *content_lst1 = malloc(sizeof (char));
-    char *content_lst2 = malloc(sizeof(char));
-    char *content_lst3 = malloc(sizeof(char));
-
-    content_lst1 = "coucou";
-    content_lst2 = "salut";
-    content_lst3 = "hola";
+    char *content_lst1 = ft_strdup("coucou");
+    char *content_lst2 = ft_strdup("salut");
+    char *content_lst3 = ft_strdup("hola");
 
     lst1 = ft_lstnew(content_lst1);
     lst2 = ft_lstnew(content_lst2);
@@ -32,8 +35,7 @@ void ft_lstiter_main()
     ft_lstadd_back(&lst1, lst3);
 
     printf("before ft_lstiter is %s\n", (char*) (lst2->content));
-    ft_lstiter(lst1, myfunc);
-    printf("before ft_lstiter is %s\n", (char*)lst2->content);
-    ft_lstdelone(lst1, del);
+    ft_lstiter(lst2, myfunc);
+    printf("after ft_lstiter is %s\n", (char*)lst2->content);
     ft_lstclear(&lst1, del);
 }

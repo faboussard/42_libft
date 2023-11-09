@@ -1,5 +1,5 @@
 
-#include "../includes/libft.h"
+#include "../src/libft.h"
 #include "../includes/libft_main.h"
 
 /*size_t static reset(size_t *n)

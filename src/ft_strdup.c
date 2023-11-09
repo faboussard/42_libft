@@ -1,5 +1,5 @@
 
-#include "../includes/libft.h"
+#include "libft.h"
 #include <stdlib.h>
 
 char *ft_strdup(const char *s)
@@ -14,7 +14,7 @@ char *ft_strdup(const char *s)
     len = ft_strlen(s);
     copy = malloc(sizeof(char) * (len + 1));
     if (copy == NULL)
-        return 0;
+        return NULL;
     while (i <= len)
     {
         copy[i] = s[i];

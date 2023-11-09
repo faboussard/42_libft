@@ -1,5 +1,5 @@
 
-#include "../includes/libft.h"
+#include "../src/libft.h"
 #include "../includes/libft_main.h"
 
 void ft_strlcpy_main()

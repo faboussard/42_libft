@@ -1,14 +1,13 @@
 //
 // Created by fanny on 31/10/23.
 //
-#include "../includes/libft.h"
+#include "libft.h"
 
 void *ft_memcpy(void *dest, const void *src, size_t n)
 {
     size_t i;
     unsigned char *byte_src;
     unsigned char *byte_dest;
-    unsigned char *temp;
 
     i = 0;
     byte_src = (unsigned char *)src;

@@ -1,4 +1,4 @@
-#include "../includes/libft.h"
+#include "libft.h"
 
 // returns a pointer to the last occurence of c
 char *ft_strrchr(const char *s, int c)

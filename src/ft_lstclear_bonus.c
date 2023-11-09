@@ -1,7 +1,7 @@
 //
 // Created by juba on 07/11/23.
 //
-#include "../includes/libft.h"
+#include "libft.h"
 #include <stdlib.h>
 
 void ft_lstclear(t_list **lst, void (*del)(void *))

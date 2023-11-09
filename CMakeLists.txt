@@ -3,9 +3,11 @@ project(mylib C)
 
 set(CMAKE_C_STANDARD 11)
 
+include_directories("includes")
+
 add_executable(mylib src_main/ft_memset_main.c
         src/ft_memset.c
-        includes/libft.h
+        src/libft.h
         src/ft_bzero.c
         src_main/ft_bzero_main.c
         includes/libft_main.h
@@ -57,26 +59,28 @@ add_executable(mylib src_main/ft_memset_main.c
         src/ft_putendl_fd.c
         src/ft_putnbr_fd.c
         src_main/ft_putnbr_fd_main.c
-        src/ft_lstnew.c
+        src/ft_lstnew_bonus.c
         src/ft_calloc.c
         src_main/ft_lstnew_main.c
-        src/ft_lstadd_front.c
+        src/ft_lstadd_front_bonus.c
         src_main/ft_lstadd_front_main.c
-        src/ft_lstsize.c
+        src/ft_lstsize_bonus.c
         src_main/ft_lstsize_main.c
         src_main/ft_isalnum_main.c
         src_main/ft_digit_main.c
-        src/ft_lstlast.c
+        src/ft_lstlast_bonus.c
         src_main/ft_lstlast_main.c
         src_main/ft_lstlast_main2.c
-        src/ft_lstadd_back.c
+        src/ft_lstadd_back_bonus.c
         src_main/ft_lstadd_back_main.c
-        src/ft_lstdelone.c
-        src/ft_lstclear.c
+        src/ft_lstdelone_bonus.c
+        src/ft_lstclear_bonus.c
         src_main/ft_lstdelone_main.c
-        src/ft_lstiter.c
+        src/ft_lstiter_bonus.c
         src_main/ft_lstiter_main.c
         src/ft_split.c
         src_main/ft_calloc_main.c
         src_main/del.c
+        src/ft_lstmap_bonus.c
+        src/ft_putchar_fd.c
 )

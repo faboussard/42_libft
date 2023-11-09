@@ -1,5 +1,5 @@
 
-#include "../includes/libft.h"
+#include "libft.h"
 
 int ft_isprint(unsigned char c)
 {
