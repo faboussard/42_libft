@@ -9,11 +9,11 @@ size_t index_end(const char *s1, const char *set)
 {
     size_t i;
     i = ft_strlen(s1);
-    while (i > 0)
+    while (i >= 1)
     {
-        if (ft_strrchr(set, s1[i]) == NULL)
-            return (i);
         i--;
+        if (ft_strchr(set, s1[i]) == NULL)
+            return (i);
     }
     return (i);
 }

@@ -43,8 +43,8 @@ int main()
     //ft_lstsize_main();
     //ft_lstlast_main();
     //ft_lstlast_main2();
-    //ft_lstiter_main();
-    ft_strtrim_main();
+    ft_lstiter_main();
+   // ft_strtrim_main();
 
     return 0;
 }
