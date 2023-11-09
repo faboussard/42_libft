@@ -11,7 +11,7 @@ char *ft_strrchr(const char *s, int c)
     {
         if (s[i] == c)
         {
-            result = ft_strdup(s);
+            result = ft_strdup(s) + i;
             return (result);
         }
         i--;

@@ -22,8 +22,8 @@ int main()
     //ft_strdup_main();
     //ft_toupper_main();
     //ft_tolower_main();
-    //ft_strchr_main();
-    //ft_strrchr_main();
+    ft_strchr_main();
+    ft_strrchr_main();
     //ft_strncmp_main();
     //ft_memchr_main();
     //ft_memcmp_main();
@@ -34,9 +34,9 @@ int main()
     //ft_itoa_main();
     //ft_strmapi_main();
     //ft_striteri_main();
-    ft_putstr_fd_main();
-    ft_putendl_fd_main();
-    ft_putnbr_fd_main();
+    //ft_putstr_fd_main();
+    //ft_putendl_fd_main();
+    //ft_putnbr_fd_main();
     //ft_lstnew_main();
     //ft_lstadd_front_main();
     //ft_lstadd_back_main();
@@ -44,6 +44,7 @@ int main()
     //ft_lstlast_main();
     //ft_lstlast_main2();
     //ft_lstiter_main();
+    ft_strtrim_main();
 
     return 0;
 }

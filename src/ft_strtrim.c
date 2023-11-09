@@ -8,13 +8,19 @@
 int index_end(const char *s1, const char *set)
 {
     size_t i;
+    size_t j;
     i = ft_strlen(s1);
-    while (s1[i] != '\0')
+    printf("i is %d\n", i);
+    while (i > 0)
     {
-        if (ft_strchr(set, s1[i]) == NULL)
+        if (ft_strrchr(set, s1[i]) == NULL)
             return (i);
         i--;
+        printf("set is %s\n", set);
+        printf("set de i est %c\n", set[i]);
+        printf("s1 de i est %c\n", s1[i]);
     }
+    return (i);
 }
 
 int index_start(const char *s1, const char *set)
@@ -33,8 +39,13 @@ int index_start(const char *s1, const char *set)
 char *ft_strtrim(char const *s1, char const *set)
 {
     int start;
+    int end;
+
+    end = index_end(s1, set);
     start = index_start(s1, set);
     printf("i est %d\n", start);
     printf("s[i] est %c\n", s1[start]);
+    printf("i est %d\n", end);
+    printf("s[i] est %c\n", s1[end]);
     return (s1);
 }

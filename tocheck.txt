@@ -5,6 +5,7 @@ ft_split
 ft_trim
 last bonus
 
+faire valgrind clion, et demander pour exam
 doute de quand retourner null ou 0, pour mes amlloc et pour ft strchr par ex;
 normalement je dois return null et je return 0
 
