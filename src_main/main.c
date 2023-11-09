@@ -14,7 +14,7 @@ int main()
     //ft_memset_main();
     //ft_bezero_main();
     //ft_calloc_main();
-    //ft_memcpy_main();
+    ft_memcpy_main();
     //ft_memmove_main();
     //ft_strlcpy_main();
     //ft_strlen_main();
