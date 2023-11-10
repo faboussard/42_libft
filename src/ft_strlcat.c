@@ -3,17 +3,33 @@
 //
 #include "libft.h"
 
-size_t	ft_strlcat(char *dst, const char *src, size_t size)
+/*
+** DESCRIPTION:
+** 	strlcat() take the full size of the buffer (not
+**	just the length) and guarantee to NUL-terminate the result
+ *  as long as size is larger than 0
+ * as long as there is at least one byte free in dst.
+ *
+ * Note that you should include a byte for the NUL in size.
+ * for strlcat() both src and dst must be NUL-terminated.
+ * returns : the initial length of dst plus the length of src (to make truncation detection simple.)
+*/
+size_t ft_strlcat(char *dest, const char *src, size_t size)
 {
-    size_t d;
+    size_t i;
 
-    d = 0;
-    while (src[d] != '\0' && size)
+    i = 0;
+    if (dest == 0 || src == 0)
+        return (0);
+    if (size != 0)
     {
-        dst[size] = src[d];
-        size++;
-        d++;
+        while (src[i] != '\0' && i < size - 1)
+        {
+            dest[size] = src[i];
+            size++;
+            i++;
+        }
+        dest[size] = '\0';
     }
-    dst[size] = '\0';
     return (size);
 }

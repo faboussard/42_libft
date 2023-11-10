@@ -8,6 +8,6 @@
 void ft_strchr_main()
 {
     char string[] = "couka";
-    char c = 'k';
-    printf("ft_strchr is %s\n", ft_strchr(string, c));
+    int c = 'k';
+    printf("ft_strchr doit renvoyer ka et il renvoie %s\n", ft_strchr(string, c));
 }

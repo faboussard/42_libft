@@ -33,20 +33,14 @@ size_t index_start(const char *s1, const char *set)
 
 char *ft_strtrim(char const *s1, char const *set)
 {
-    size_t s1_strlen;
     size_t start;
     size_t end;
     size_t len;
     char *s1_copy_trimmed;
 
-    s1_strlen = ft_strlen(s1);
     end = index_end(s1, set);
     start = index_start(s1, set);
-    len = s1_strlen - end;
+    len = (end - start) + 1;
     s1_copy_trimmed = ft_substr(s1, start, len);
-    printf("start est %zu\n", start);
-    printf("end est %zu\n", end);
-    printf("len est %zu\n", len);
-    printf("s1_strlen est %zu\n", s1_strlen);
     return (s1_copy_trimmed);
 }

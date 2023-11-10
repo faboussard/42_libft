@@ -8,6 +8,6 @@
 void ft_strrchr_main()
 {
     char string[] = "couca";
-    char c = 'c';
+    int c = 'c';
     printf("ft_strrchr is %s\n", ft_strrchr(string, c));
 }

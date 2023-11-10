@@ -18,7 +18,7 @@ int main()
     //ft_memmove_main();
     //ft_strlcpy_main();
     //ft_strlen_main();
-    //ft_strlcat_main();
+    ft_strlcat_main();
     //ft_strdup_main();
     //ft_toupper_main();
     //ft_tolower_main();
@@ -44,7 +44,7 @@ int main()
     //ft_lstlast_main();
     //ft_lstlast_main2();
     //ft_lstiter_main();
-    ft_strtrim_main();
+    //ft_strtrim_main();
 
     return 0;
 }
