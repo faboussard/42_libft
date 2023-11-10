@@ -10,13 +10,13 @@ typedef struct s_list
 } t_list;
 
 int ft_atoi(const char *string);
-int ft_isalpha(unsigned char c);
-int ft_isdigit(unsigned char c);
-int ft_isalnum(unsigned char c);
-int ft_isascii(unsigned char c);
-int ft_isprint(unsigned char c);
-int ft_tolower(unsigned char c);
-int ft_toupper(unsigned char c);
+int ft_isalpha(int c);
+int ft_isdigit(int c);
+int ft_isalnum(int c);
+int ft_isascii(int c);
+int ft_isprint(int c);
+int ft_tolower(int c);
+int ft_toupper(int c);
 size_t ft_strlen(const char *string);
 char *ft_strchr(const char *s, int c);
 char *ft_strrchr(const char *s, int c);

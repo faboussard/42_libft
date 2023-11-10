@@ -8,12 +8,12 @@
 size_t index_end(const char *s1, const char *set)
 {
     size_t i;
-    i = ft_strlen(s1);
-    while (i >= 1)
+    i = ft_strlen(s1) - 1;
+    while (i > 0)
     {
-        i--;
         if (ft_strchr(set, s1[i]) == NULL)
             return (i);
+        i--;
     }
     return (i);
 }
@@ -40,7 +40,7 @@ char *ft_strtrim(char const *s1, char const *set)
     char *s1_copy_trimmed;
 
     s1_strlen = ft_strlen(s1);
-    end = s1_strlen - index_end(s1, set);
+    end = index_end(s1, set);
     start = index_start(s1, set);
     len = s1_strlen - end;
     s1_copy_trimmed = ft_substr(s1, start, len);

@@ -1,26 +1,33 @@
 //
 // Created by faboussa on 11/8/23.
 //
-/*
-#include <stdlib.h>
-#include "../includes/libft.h"
-
-int size_s_without_c(char *s, char c)
-{
-    int i;
-    i = 0;
-    if (!ft_strchr(s, c)) //si on ne le trouve pas dans dqns le set, in imprime
-        i++;
-    return (i);
-}
-
-char **ft_split(char const *s, char c)
-{
-    int i;
-    int new_string_size;
-    char *new_string;
-    char **array_string;
-    new_string_size = size_s_without_c(s, c);
-    new_string = malloc(sizeof(char *) * new_string_size);//on a la taille de larray totale ? il nous faut un double maalloc
-    *array_string = malloc
-}/*/
+//
+//#include <stdlib.h>
+//#include "libft.h"
+//
+//int isfound_sep_nbrs(char s_i, char c)
+//{
+//    if (s_i == c)
+//        return (1);
+//    return (0);
+//}
+//    char **ft_split(char const *s, char c)
+//    {
+//        int i;
+//        int count;
+//        char *buffer;
+//        char **strings;
+//        int string_index;
+//
+//        i = 0;
+//        while (s[i] != '\0')
+//        {
+//            if ((isfound_sep_nbrs(s[i], c == 1)))
+//                count += 1;
+//            i++;
+//        }
+//        strings = malloc(sizeof(char) * count);
+//        if (strings == NULL)
+//            return (NULL);
+//        while (s)
+//    }

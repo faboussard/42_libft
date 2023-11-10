@@ -14,7 +14,7 @@ int main()
     //ft_memset_main();
     //ft_bezero_main();
     //ft_calloc_main();
-    ft_memcpy_main();
+    //ft_memcpy_main();
     //ft_memmove_main();
     //ft_strlcpy_main();
     //ft_strlen_main();
@@ -43,8 +43,8 @@ int main()
     //ft_lstsize_main();
     //ft_lstlast_main();
     //ft_lstlast_main2();
-    ft_lstiter_main();
-   // ft_strtrim_main();
+    //ft_lstiter_main();
+    ft_strtrim_main();
 
     return 0;
 }
