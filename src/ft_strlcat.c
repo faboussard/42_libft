@@ -14,22 +14,21 @@
  * for strlcat() both src and dst must be NUL-terminated.
  * returns : the initial length of dst plus the length of src (to make truncation detection simple.)
 */
-size_t ft_strlcat(char *dest, const char *src, size_t size)
+size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 {
-    size_t i;
+    size_t c;
+    size_t d;
 
-    i = 0;
-    if (dest == 0 || src == 0)
-        return (0);
-    if (size != 0)
+    if (dstsize <= ft_strlen(dst))
+        return (dstsize + ft_strlen(src));
+    c = ft_strlen(dst);
+    d = 0;
+    while (src[d] != '\0' && c + 1 < dstsize)
     {
-        while (src[i] != '\0' && i < size - 1)
-        {
-            dest[size] = src[i];
-            size++;
-            i++;
-        }
-        dest[size] = '\0';
+        dst[c] = src[d];
+        c++;
+        d++;
     }
-    return (size);
+    dst[c] = '\0';
+    return (ft_strlen(dst) + ft_strlen(&src[d]));
 }

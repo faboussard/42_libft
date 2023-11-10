@@ -31,7 +31,7 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dstsize);
 int ft_strncmp(char *s1, char *s2, unsigned int n);
 char *ft_memchr(const void *s, int c, size_t n);
 int ft_memcmp(void *s1, const void *s2, size_t n);
-const char *ft_strnstr (const char *big, const char *little, size_t len);
+char *ft_strnstr (const char *big, const char *little, size_t len);
 char *ft_substr(char const *s1, unsigned int start, size_t len);
 char *ft_strjoin(char const *s1, char const *s2);
 char *ft_strtrim(char const *s1, char const *set);
