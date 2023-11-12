@@ -8,8 +8,8 @@
 
 void ft_strnstr_main()
 {
-    char big[] = "coutoicouto";
-    char little[] = "toi";
-    printf("ft_strnstr is %s\n", ft_strnstr(big, little, 20));
-    //printf("strnstr is %s\n", strnstr(big, little, 20));
+	char big[] = "coutoicouto";
+	char little[] = "toi";
+	printf("ft_strnstr is %s\n", ft_strnstr(big, little, 20));
+	//printf("strnstr is %s\n", strnstr(big, little, 20));
 }

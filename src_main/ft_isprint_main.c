@@ -7,5 +7,5 @@
 
 void ft_isprint_main()
 {
-    printf("ft_isprint is %d\n", ft_isprint('b'));
+	printf("ft_isprint is %d\n", ft_isprint('b'));
 }

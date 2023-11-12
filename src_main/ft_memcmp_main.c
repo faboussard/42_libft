@@ -6,8 +6,8 @@
 
 void ft_memcmp_main()
 {
-    char s1[] = "010";
-    char s2[] = "001";
-    printf("ft_memcmp is %d\n", ft_memcmp(s1, s2, 0));
-    printf("memcmp is %d\n", memcmp(s1, s2, 0));
+	char s1[] = "010";
+	char s2[] = "001";
+	printf("ft_memcmp is %d\n", ft_memcmp(s1, s2, 5));
+	printf("memcmp is %d\n", memcmp(s1, s2, 5));
 }

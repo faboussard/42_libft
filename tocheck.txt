@@ -1,12 +1,10 @@
-not sure about
 
-ft_itter
 ft_split
-ft_trim
 last bonus
 tester si le makefile relink
+leaksanitizer in itoa and frputnbr
 
-makefile - flcean du bonus, dire a lilian quil faut lister les fichiers
 check return types and paramteter types
 verifier que tout est la
 check file names
+forbidden functions ?

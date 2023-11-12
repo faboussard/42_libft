@@ -7,5 +7,5 @@
 
 void ft_isalpha_main()
 {
-    printf("ft_isalpha is %d\n", ft_isalpha('b'));
+	printf("ft_isalpha is %d\n", ft_isalpha('b'));
 }

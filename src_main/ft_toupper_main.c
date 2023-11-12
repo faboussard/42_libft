@@ -7,5 +7,5 @@
 
 void ft_toupper_main()
 {
-    printf("ft_toupper is %c\n", ft_toupper('b'));
+	printf("ft_toupper is %c\n", ft_toupper('b'));
 }

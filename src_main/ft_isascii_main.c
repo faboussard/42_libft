@@ -7,5 +7,5 @@
 
 void ft_isascii_main()
 {
-    printf("ft_isascii %d\n", ft_isascii('b'));
+	printf("ft_isascii %d\n", ft_isascii('b'));
 }

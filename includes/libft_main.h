@@ -8,6 +8,7 @@
 #include <string.h>
 #include <stdio.h>
 
+void ft_atoi_main();
 void ft_isalpha_main();
 void ft_isdigit_main();
 void ft_isalnum_main();

@@ -1,18 +1,28 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strrchr.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: faboussa <faboussa@student.42lyon.fr>      +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2023/11/11 08:46:22 by faboussa          #+#    #+#             */
+/*   Updated: 2023/11/11 08:46:22 by faboussa         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "libft.h"
 
 // returns a pointer to the last occurence of c
 char *ft_strrchr(const char *s, int c)
 {
-    size_t i;
-    char *result;
-    result = (char *) s;
+	char *result;
+	size_t i;
 
-    i = ft_strlen(s);
-    while (i > 0)
-    {
-        if (result[i] == c)
-            return (&result[i]);
-        i--;
-    }
-    return (0);
+	result = (char *)s;
+	i = ft_strlen(result);
+	while (i > 0 && c != result[i])
+		i--;
+	if (result[i] == c)
+		return (&result[i]);
+	return NULL;
 }

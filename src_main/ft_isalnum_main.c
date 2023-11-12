@@ -7,5 +7,5 @@
 
 void ft_isalnum_main()
 {
-    printf("ft_isalnum is %d\n", ft_isalnum('b'));
+	printf("ft_isalnum is %d\n", ft_isalnum('b'));
 }

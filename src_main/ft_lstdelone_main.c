@@ -6,10 +6,10 @@
   /*
   void    del(void *content)
 {
-    if (content)
-    {
-        free(content);
-    }
+	if (content)
+	{
+	free(content);
+	}
 }
 
 void    ft_lstdelone_main()

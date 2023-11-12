@@ -7,8 +7,8 @@
 //used in ft_lstadd etc
 void   del(void *content)
 {
-    if (content)
-    {
-        free(content);
-    }
+	if (content)
+	{
+	free(content);
+	}
 }

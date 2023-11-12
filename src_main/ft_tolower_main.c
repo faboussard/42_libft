@@ -4,5 +4,5 @@
 
 void ft_tolower_main()
 {
-    printf("ft_tolower is %c\n", ft_tolower('b'));
+	printf("ft_tolower is %c\n", ft_tolower('b'));
 }

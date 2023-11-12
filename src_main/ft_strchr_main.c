@@ -7,7 +7,8 @@
 
 void ft_strchr_main()
 {
-    char string[] = "couka";
-    int c = 'k';
-    printf("ft_strchr doit renvoyer ka et il renvoie %s\n", ft_strchr(string, c));
+	char string[] = "couka";
+	int c = '\0';
+	printf("ft_strchr doit renvoyer ka et il renvoie %s\n", ft_strchr(string, c));
+	printf("strchr doit renvoyer ka et il renvoie %s\n", strchr(string, c));
 }

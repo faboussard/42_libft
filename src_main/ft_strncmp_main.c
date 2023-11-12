@@ -6,8 +6,8 @@
 
 void ft_strncmp_main()
 {
-    char s1[] = "010";
-    char s2[] = "001";
-    printf("ft_strncmp is %d\n", ft_strncmp(s1, s2, 0));
-    printf("strncmp is %d\n", strncmp(s1, s2, 0));
+	char s1[] = "010";
+	char s2[] = "001";
+	printf("ft_strncmp is %d\n", ft_strncmp(s1, s2, 5));
+	printf("strncmp is %d\n", strncmp(s1, s2, 5));
 }

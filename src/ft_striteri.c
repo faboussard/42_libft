@@ -1,20 +1,26 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_striteri.c                                      :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: faboussa <faboussa@student.42lyon.fr>      +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2023/11/11 08:46:22 by faboussa          #+#    #+#             */
+/*   Updated: 2023/11/11 08:46:22 by faboussa         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include <malloc.h>
 #include "libft.h"
 
-char *ft_striteri(char *s, char (*f)(unsigned int, char*))
+void ft_striteri(char *s, void (*f)(unsigned int, char*))
 {
-    int i;
-    char *new_string;
+	int i;
 
-    new_string = malloc(sizeof(char) * (ft_strlen(s)) + 1);
-    if (new_string == NULL)
-        return (0);
-    i = 0;
-    while (s[i])
-    {
-        new_string[i] = f(i, &s[i]);
-        i++;
-    }
-    new_string[i] = '\0';
-    return (new_string);
+	i = 0;
+	while (s[i] != '\0')
+	{
+		f(i, &s[i]);
+		i++;
+	}
 }

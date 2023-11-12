@@ -5,5 +5,5 @@
 
 void ft_isdigit_main()
 {
-    printf("ft_is_digit is %d\n", ft_isdigit('b'));
+	printf("ft_is_digit is %d\n", ft_isdigit('b'));
 }
