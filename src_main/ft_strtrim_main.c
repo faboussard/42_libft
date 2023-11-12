@@ -5,7 +5,7 @@
 
 void ft_strtrim_main()
 {
-	char *s1 = "      ";
+	char *s1 = "coutoicoucoutoi";
 	char *s2 = "toi";
 	char *istrim = ft_strtrim(s1, s2);
 

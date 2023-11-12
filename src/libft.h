@@ -51,5 +51,6 @@ void ft_lstclear(t_list **lst, void (*del)(void*));
 void ft_lstiter(t_list *lst, void (*f)(void *));
 t_list *ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));
 void ft_putchar_fd(char c, int fd);
+char **ft_split(char const *s, char c);
 
 #endif // LIBFT_H

@@ -34,7 +34,7 @@ int main()
 	//ft_tolower_main();
 	//ft_strchr_main();
 	//ft_strrchr_main();
-	ft_strncmp_main();
+	//ft_strncmp_main();
 	//ft_memchr_main();
 	//ft_memcmp_main();
 	//ft_memmove_main();
@@ -58,6 +58,7 @@ int main()
 	//ft_lstiter_main();
 	//ft_strtrim_main();
 	//ft_atoi_main();
+	ft_split_main();
 
 	return 0;
 }

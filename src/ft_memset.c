@@ -12,21 +12,24 @@
 
 #include "libft.h"
 
+//DESCRIPTION         top
+//The memset() function fills the first n bytes of the memory area
+//pointed to by s with the constant byte c.
+//RETURN VALUE         top
+//		The memset() function returns a pointer to the memory area s.
 void *ft_memset(void *s, int c, size_t n)
 {
 	size_t i;
 	unsigned char *byte;
 
+	if (s == NULL || n == 0)
+		return NULL;
 	i = 0;
-	byte = (unsigned char *) s;
-	if (n <= 0)
-		return 0;
-	if (byte == NULL)
-		return 0;
+	byte = (unsigned char *)s;
 	while (i < n)
 	{
-		byte[i] = (unsigned char) c;
+		byte[i] = (unsigned char)c;
 		i = i + 1;
 	}
-	return (void *) byte;
+	return (s + n);
 }

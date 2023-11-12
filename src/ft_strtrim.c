@@ -1,15 +1,3 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   ft_strtrim.c                                       :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: faboussa <faboussa@student.42lyon.fr>      +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/11/12 20:13:48 by faboussa          #+#    #+#             */
-/*   Updated: 2023/11/12 20:13:48 by faboussa         ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
-
 
 #include <malloc.h>
 #include "libft.h"
@@ -34,7 +22,7 @@ size_t index_start(const char *s1, const char *set)
 {
 	size_t i;
 	i = 0;
-	while (s1[i] != '\0') // toujours preciser le null ou le '\'0 pour comprndre le type de donnees
+	while (s1[i] != '\0')
 	{
 		if (ft_strchr(set, s1[i]) == NULL)
 			return (i);
