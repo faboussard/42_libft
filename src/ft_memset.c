@@ -6,7 +6,7 @@
 /*   By: faboussa <faboussa@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/11 08:46:22 by faboussa          #+#    #+#             */
-/*   Updated: 2023/11/11 08:46:22 by faboussa         ###   ########.fr       */
+/*   Updated: 2023/11/13 01:18:59 by faboussa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,14 +22,14 @@ void *ft_memset(void *s, int c, size_t n)
 	size_t i;
 	unsigned char *byte;
 
-	if (s == NULL || n == 0)
+	if (s == NULL)
 		return NULL;
 	i = 0;
 	byte = (unsigned char *)s;
 	while (i < n)
 	{
-		byte[i] = (unsigned char)c;
-		i = i + 1;
+		byte[i] = c;
+		i++;
 	}
-	return (s + n);
+	return (void *)(byte);
 }

@@ -23,7 +23,6 @@ int main()
 	//ft_isalnum_main();
 	//ft_isascii_main();
 	//ft_isprint_main();
-	//ft_memset_main();
 	//ft_bezero_main();
 	//ft_calloc_main();
 	//ft_strlcpy_main();
@@ -36,6 +35,7 @@ int main()
 	//ft_strrchr_main();
 	//ft_strncmp_main();
 	//ft_memchr_main();
+	ft_memset_main();
 	//ft_memcmp_main();
 	//ft_memmove_main();
 	//ft_memcpy_main();
@@ -58,7 +58,7 @@ int main()
 	//ft_lstiter_main();
 	//ft_strtrim_main();
 	//ft_atoi_main();
-	ft_split_main();
+	//ft_split_main();
 
 	return 0;
 }
