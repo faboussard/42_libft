@@ -49,6 +49,7 @@ void ft_lstadd_back_main();
 void ft_lstdelone_main();
 void   del(void *content);
 void ft_lstiter_main();
-void	ft_lstmap_main();
+int	ft_lstmap_main();
+void ft_split_main();
 
 #endif //LIBFT_V2_LIBFT_MAIN_H

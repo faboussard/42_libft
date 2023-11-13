@@ -21,51 +21,66 @@
 //**	ended by a NULL pointer.
 //*/
 
-static int	count_words(const char *str, char c)
+static int count_words(const char *str, char c)
 {
-	int	i;
-	int	trigger;
+    int count = 0;
+    int in_word = 0;
 
-	i = 0;
-	trigger = 0;
-	while (*str)
-	{
-		if (*str != c && trigger == 0)
-		{
-			trigger = 1;
-			i++;
-		}
-		else if (*str == c)
-			trigger = 0;
-		str++;
-	}
-	return (i);
+    while (*str)
+    {
+        if (*str != c)
+        {
+            if (!in_word)
+            {
+                in_word = 1;
+                count++;
+            }
+        }
+        else
+        {
+            in_word = 0;
+        }
+        str++;
+    }
+
+    return count;
 }
 
-char	**ft_split(char const *s, char c)
+char **ft_split(char const *s, char c)
 {
-	size_t	i;
-	size_t	j;
-	int		index;
-	char	**split;
+    size_t i = 0;
+    size_t j = 0;
+    int start = -1;
+    char **split;
 
-	split = malloc((count_words(s, c) + 1) * sizeof(char *));
-	if (s == NULL || split == NULL)
-		return (NULL);
-	i = 0;
-	j = 0;
-	index = -1;
-	while (i <= ft_strlen(s))
-	{
-		if (s[i] != c && index < 0)
-			index = i;
-		else if ((s[i] == c || i == ft_strlen(s)) && index >= 0)
-		{
-			split[j++] = ft_substr(s, index, i);
-			index = -1;
-		}
-		i++;
-	}
-	split[j] = 0;
-	return (split);
+    split = (char **)malloc((count_words(s, c) + 1) * sizeof(char *));
+    if (s == NULL || split == NULL)
+        return NULL;
+
+    while (s[i])
+    {
+        if (s[i] != c && start == -1)
+        {
+            start = i;
+        }
+        else if ((s[i] == c || s[i + 1] == '\0') && start != -1)
+        {
+            size_t len;
+            if (s[i] == c)
+            {
+                len = i - start;
+            }
+            else
+            {
+                len = i - start + 1;
+            }
+            split[j++] = ft_substr(s, start, len);
+            start = -1;
+        }
+        i++;
+    }
+    split[j] = NULL;
+    return split;
 }
+
+

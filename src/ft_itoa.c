@@ -17,59 +17,65 @@
 #include <malloc.h>
 #include "libft.h"
 
-static int	ft_count(int n)
-{
-	int	i;
+#include <stdlib.h>
+#include "libft.h"
 
-	i = 0;
-	if (n < 0)
-		n = -n;
-	while (n > 0)
-	{
-		n = n / 10;
-		i++;
-	}
-	return (i);
+
+static int ft_count_digits(int n)
+{
+    int count = (n <= 0) ? 1 : 0;
+
+    while (n != 0)
+    {
+        n /= 10;
+        count++;
+    }
+
+    return count;
 }
 
-static int	ft_power(int i)
+static int is_negative(int n)
 {
-	int	div;
-
-	div = 1;
-	while (i > 0)
-	{
-		div = div * 10;
-		i--;
-	}
-	return (div);
+    return (n < 0) ? 1 : 0;
 }
 
-char	*ft_itoa(int n)
+char *ft_itoa(int n)
 {
-	int		i;
-	char	*s;
-	int		div;
+    int digits = ft_count_digits(n);
+    int negative = is_negative(n);
 
-	i = ft_count(n);
-	s = (char *) malloc(sizeof(char) * (i + 1));
-	if (s == NULL)
-		return (NULL);
-	div = ft_power(i - 1);
-	i = 0;
-	if (n == -2147483648)
-		return ("-2147483648");
-	if (n < 0)
-	{
-		s[i++] = '-';
-		n = -n;
-	}
-	while (div > 0)
-	{
-		s[i] = (n / div % 10 + 48);
-		i++;
-		div = div / 10;
-	}
-	s[i] = '\0';
-	return (s);
+    char *s = (char *)malloc((digits + negative + 1) * sizeof(char));
+
+    if (s == NULL)
+        return (NULL);
+
+    if (n == 0)
+    {
+        s[0] = '0';
+        s[1] = '\0';
+        return s;
+    }
+
+    if (n == -2147483648)
+        return ft_strdup("-2147483648");
+
+    if (negative)
+    {
+        s[0] = '-';
+        n = -n;
+    }
+
+    s[digits + negative] = '\0';
+
+    while (digits > 0)
+    {
+        s[digits + negative - 1] = (n % 10) + '0';
+        digits--;
+        n /= 10;
+    }
+
+    return s;
 }
+
+
+

@@ -19,7 +19,7 @@ void *myfunc2(void *content)
 	return content;
 }
 
-void ft_lstmap_main()
+int ft_lstmap_main()
 {
 	t_list *lst1 = NULL;
 	t_list *lst2 = NULL;
@@ -36,8 +36,9 @@ void ft_lstmap_main()
 	ft_lstadd_back(&lst1, lst2);
 	ft_lstadd_back(&lst1, lst3);
 
-	printf("before ft_lstiter is %s\n", (char *) (lst2->content));
+	printf("before ft_lstmap is %s\n", (char *) (lst1->content));
 	new_list = ft_lstmap(lst1, myfunc2, del);
-	printf("after ft_lstiter is %s\n", (char *) new_list->content);
+	printf("after ft_lstmap is %s\n", (char *)  new_list->content);
 	ft_lstclear(&new_list, del);
+    return 1;
 }
