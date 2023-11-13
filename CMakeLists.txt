@@ -84,4 +84,5 @@ add_executable(mylib src_main/ft_memset_main.c
 	src/ft_lstmap_bonus.c
 	src/ft_putchar_fd.c
         src_main/ft_split_main.c
+        src_main/ft_lstmap_main.c
 )

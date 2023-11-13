@@ -1,7 +1,7 @@
 #include "../src/libft.h"
 #include "libft_main.h"
 
-void myfunc(void *content)
+void *myfunc2(void *content)
 {
 	char *str;
 	int i;
@@ -16,13 +16,15 @@ void myfunc(void *content)
 			i++;
 		}
 	}
+	return content;
 }
 
-void ft_lstiter_main()
+void ft_lstmap_main()
 {
 	t_list *lst1 = NULL;
 	t_list *lst2 = NULL;
 	t_list *lst3 = NULL;
+	t_list *new_list = NULL;
 
 	char *content_lst1 = ft_strdup("coucou");
 	char *content_lst2 = ft_strdup("salut");
@@ -35,7 +37,7 @@ void ft_lstiter_main()
 	ft_lstadd_back(&lst1, lst3);
 
 	printf("before ft_lstiter is %s\n", (char *) (lst2->content));
-	ft_lstiter(lst1, myfunc);
-	printf("after ft_lstiter is %s\n", (char *) lst2->content);
-	ft_lstclear(&lst1, del);
+	new_list = ft_lstmap(lst1, myfunc2, del);
+	printf("after ft_lstiter is %s\n", (char *) new_list->content);
+	ft_lstclear(&new_list, del);
 }
