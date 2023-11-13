@@ -13,10 +13,11 @@
 #include "libft.h"
 
 // returns a pointer to the last occurence of c
-char *ft_strrchr(const char *s, int c)
+
+char	*ft_strrchr(const char *s, int c)
 {
-	char *result;
-	size_t i;
+	char	*result;
+	size_t	i;
 
 	result = (char *)s;
 	i = ft_strlen(result);
@@ -24,5 +25,5 @@ char *ft_strrchr(const char *s, int c)
 		i--;
 	if (result[i] == c)
 		return (&result[i]);
-	return NULL;
+	return (NULL);
 }

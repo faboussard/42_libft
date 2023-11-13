@@ -10,18 +10,15 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-//
-// Created by juba on 07/11/23.
-//
 #include "libft.h"
 #include <stdlib.h>
 
-void ft_lstclear(t_list **lst, void (*del)(void *))
+void	ft_lstclear(t_list **lst, void (*del)(void *))
 {
-	t_list *temp;
+	t_list	*temp;
 
 	if (*lst == NULL)
-		return;
+		return ;
 	while (*lst != NULL)
 	{
 		temp = *lst;

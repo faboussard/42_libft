@@ -10,7 +10,6 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-
 //** LIBRARY: <string.h>
 //** SYNOPSIS: save a copy of a string (with malloc)
 //**
@@ -22,15 +21,15 @@
 #include "libft.h"
 #include <stdlib.h>
 
-char *ft_strdup(const char *s)
+char	*ft_strdup(const char *s)
 {
-	char *copy;
+	char	*copy;
 
 	if (s == NULL)
-		return NULL;
+		return (NULL);
 	copy = malloc(sizeof(char) * (ft_strlen(s) + 1));
 	if (copy == NULL)
-		return NULL;
+		return (NULL);
 	ft_memcpy(copy, s, ft_strlen(s) + 1);
 	return (copy);
 }

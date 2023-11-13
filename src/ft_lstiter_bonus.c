@@ -10,16 +10,12 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-//
-// Created by juba on 08/11/23.
-//
-
 #include "libft.h"
 
-void ft_lstiter(t_list *lst, void (*f)(void *))
+void	ft_lstiter(t_list *lst, void (*f)(void *))
 {
 	if (f == NULL || lst == NULL)
-		return;
+		return ;
 	while (lst != NULL)
 	{
 		f(lst->content);

@@ -10,16 +10,15 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-
 #include <malloc.h>
 #include "libft.h"
 
-char *ft_substr(char const *s1, unsigned int start, size_t len)
+char	*ft_substr(char const *s1, unsigned int start, size_t len)
 {
-	size_t i;
-	size_t j;
-	size_t s1_len;
-	char *new_string;
+	size_t	i;
+	size_t	j;
+	size_t	s1_len;
+	char	*new_string;
 
 	s1_len = ft_strlen(s1);
 	if (start >= s1_len)

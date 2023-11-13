@@ -35,7 +35,7 @@ int main()
 	//ft_strrchr_main();
 	//ft_strncmp_main();
 	//ft_memchr_main();
-	ft_memset_main();
+	//ft_memset_main();
 	//ft_memcmp_main();
 	//ft_memmove_main();
 	//ft_memcpy_main();
@@ -43,7 +43,7 @@ int main()
 	//ft_substr_main();
 	//ft_strjoin_main();
 	//ft_strtrim_main();
-	//ft_itoa_main();
+	ft_itoa_main();
 	//ft_strmapi_main();
 	//ft_striteri_main();
 	//ft_putstr_fd_main(); //&putnbr fd

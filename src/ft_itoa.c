@@ -17,9 +17,9 @@
 #include <malloc.h>
 #include "libft.h"
 
-static int ft_count(int n)
+static int	ft_count(int n)
 {
-	int i;
+	int	i;
 
 	i = 0;
 	if (n < 0)
@@ -32,9 +32,9 @@ static int ft_count(int n)
 	return (i);
 }
 
-static int ft_power(int i)
+static int	ft_power(int i)
 {
-	int div;
+	int	div;
 
 	div = 1;
 	while (i > 0)
@@ -45,11 +45,11 @@ static int ft_power(int i)
 	return (div);
 }
 
-char *ft_itoa(int n)
+char	*ft_itoa(int n)
 {
-	int i;
-	char *s;
-	int div;
+	int		i;
+	char	*s;
+	int		div;
 
 	i = ft_count(n);
 	s = (char *) malloc(sizeof(char) * (i + 1));

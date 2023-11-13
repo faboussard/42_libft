@@ -1,10 +1,8 @@
-memset : your memset return address is false/your memset does not wor
+itoa : francniette dit que jai faux mais je vois pas
 ft_split
 last bonus
 tester si le makefile relink
 leaksanitizer in itoa and frputnbr
 
-check return types and paramteter types
-verifier que tout est la
 check file names
 forbidden functions ? your libft is using forbidden functions so the result may not be relevant !

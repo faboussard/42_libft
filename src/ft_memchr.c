@@ -10,14 +10,13 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-
 #include "libft.h"
 
 // returns a pointer on the first occurence of c
-char *ft_memchr(const void *s, int c, size_t n)
+char	*ft_memchr(const void *s, int c, size_t n)
 {
-	size_t i;
-	char *byte;
+	size_t	i;
+	char	*byte;
 
 	i = 0;
 	byte = (char *) s;

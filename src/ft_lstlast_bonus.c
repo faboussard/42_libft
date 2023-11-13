@@ -10,12 +10,9 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-//
-// Created by juba on 07/11/23.
-//
 #include "libft.h"
 
-t_list *ft_lstlast(t_list *lst)
+t_list	*ft_lstlast(t_list *lst)
 {
 	while (lst)
 	{

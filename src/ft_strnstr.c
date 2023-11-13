@@ -15,14 +15,15 @@
 //RETURN VALUES
 //If little is an empty string, big is returned;
 // if little	occurs nowhere in big, NULL is returned;
-// otherwise a pointer to	the first character of the first occurrence of little is returned
-char *ft_strnstr(const char *big, const char *little, size_t len)
+// otherwise a pointer to	the first character of the
+// first occurrence of little is returned
+char	*ft_strnstr(const char *big, const char *little, size_t len)
 {
-	size_t i;
-	size_t j;
-	char *little_found;
-	little_found = (char *) big;
+	size_t	i;
+	size_t	j;
+	char	*little_found;
 
+	little_found = (char *) big;
 	i = 0;
 	if (little[0] == '\0')
 		return (&little_found[i]);

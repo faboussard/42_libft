@@ -13,11 +13,13 @@
 #include "libft.h"
 #include <stdlib.h>
 
-//La fonction calloc() alloue la mémoire nécessaire pour un tableau de nmemb éléments de size octets, et renvoie un pointeur vers la mémoire allouée.
-void *ft_calloc(size_t nmemb, size_t size)
+//La fonction calloc() alloue la mémoire nécessaire pour un
+// tableau de nmemb éléments de size octets,
+// et renvoie un pointeur vers la mémoire allouée.
+void	*ft_calloc(size_t nmemb, size_t size)
 {
-	size_t total_size;
-	void *ptr;
+	size_t	total_size;
+	void	*ptr;
 
 	total_size = nmemb * size;
 	if (total_size > 2147483647)

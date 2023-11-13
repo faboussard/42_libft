@@ -10,16 +10,13 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-//
-// Created by juba on 07/11/23.
-//
 #include "libft.h"
 #include <stdlib.h>
 
-void ft_lstdelone(t_list *lst, void (*del)(void *))
+void	ft_lstdelone(t_list *lst, void (*del)(void *))
 {
 	if (del == NULL)
-		return;
+		return ;
 	if (lst != NULL)
 	{
 		del(lst->content);

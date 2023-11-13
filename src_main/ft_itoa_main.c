@@ -5,15 +5,15 @@
 #include <stdlib.h>
 
 void ft_itoa_main() {
-	int n;
-	char *string;
+	int n3;
+	char *string3;
 
 
-	n = -305;
-	string = ft_itoa(n);
-	if (string) {
-	printf("ft_itoa is %s\n", string);
-	free(string);
+	n3 = 0;
+	string3 = ft_itoa(n3);
+	if (string3) {
+	printf("ft_itoa 0 is %s\n", string3);
+	free(string3);
 	}
 	else
 	printf("Allocation failed for ft_itoa");

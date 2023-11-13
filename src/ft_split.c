@@ -14,15 +14,17 @@
 #include "libft.h"
 
 //** DESCRIPTION:
-//** 		Allocates (with malloc(3)) and returns an array of strings obtained by
-//**	splitting ’s’ using the character ’c’ as a delimiter. The array must be
+//** 		Allocates (with malloc(3)) and
+// returns an array of strings obtained by
+//**	splitting ’s’ using the character ’c’
+// as a delimiter. The array must be
 //**	ended by a NULL pointer.
 //*/
 
 static int	count_words(const char *str, char c)
 {
-	int i;
-	int trigger;
+	int	i;
+	int	trigger;
 
 	i = 0;
 	trigger = 0;
@@ -40,15 +42,16 @@ static int	count_words(const char *str, char c)
 	return (i);
 }
 
-char		**ft_split(char const *s, char c)
+char	**ft_split(char const *s, char c)
 {
 	size_t	i;
 	size_t	j;
 	int		index;
 	char	**split;
 
-	if (!s || !(split = malloc((count_words(s, c) + 1) * sizeof(char *))))
-		return (0);
+	split = malloc((count_words(s, c) + 1) * sizeof(char *));
+	if (s == NULL || split == NULL)
+		return (NULL);
 	i = 0;
 	j = 0;
 	index = -1;
