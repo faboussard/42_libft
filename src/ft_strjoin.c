@@ -15,10 +15,10 @@
 
 char	*ft_strjoin(char const *s1, char const *s2)
 {
-	char	*new_string;
-	int		i;
-	int		j;
-	int		total_length;
+	char		*new_string;
+	size_t		i;
+	size_t		j;
+	int			total_length;
 
 	total_length = ft_strlen(s1) + ft_strlen(s2);
 	new_string = malloc(sizeof(char) * total_length + 1);
