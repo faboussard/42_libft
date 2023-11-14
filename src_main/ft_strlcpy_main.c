@@ -12,6 +12,6 @@ void ft_strlcpy_main()
 	size_t len = ft_strlcpy(dest, src, sizeof(dest));
 	printf("ft_strlcpy is %zu\n", len);
     printf("dest is %s\n", dest);
-    printf("strlcpy dest is %zu\n", strlcpy(dest2, src2, sizeof(dest)));
+    //printf("strlcpy dest is %zu\n", strlcpy(dest2, src2, sizeof(dest)));
 	printf("%s\n", dest2);
 }

@@ -6,7 +6,7 @@
 /*   By: faboussa <faboussa@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/11 08:46:22 by faboussa          #+#    #+#             */
-/*   Updated: 2023/11/12 16:26:24 by faboussa         ###   ########.fr       */
+/*   Updated: 2023/11/14 20:01:47 by faboussa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,64 +18,85 @@
 #include "libft.h"
 
 #include <stdlib.h>
-#include "libft.h"
 
+static char *ft_strrev(char *str, int length)
+{
+	int i = -1;
+	char temporary;
+
+	while (++i < length / 2)
+	{
+		temporary = str[i];
+		str[i] = str[length - 1 - i];
+		str[length - 1 - i] = temporary;
+	}
+	return (str);
+}
 
 static int ft_count_digits(int n)
 {
-    int count = (n <= 0) ? 1 : 0;
+	int count;
 
-    while (n != 0)
-    {
-        n /= 10;
-        count++;
-    }
-
-    return count;
+	if (n <= 0)
+		count = 1;
+	else
+		count = 0;
+	while (n != 0)
+	{
+		n /= 10;
+		count++;
+	}
+	return (count);
 }
 
 static int is_negative(int n)
 {
-    return (n < 0) ? 1 : 0;
+	if (n < 0)
+		return (1);
+	else
+		return (0);
 }
 
 char *ft_itoa(int n)
 {
-    int digits = ft_count_digits(n);
-    int negative = is_negative(n);
+	int digits;
+	int negative;
+	int i;
 
-    char *s = (char *)malloc((digits + negative + 1) * sizeof(char));
+	digits = ft_count_digits(n);
+	negative = is_negative(n);
+	char *s = (char *) malloc((digits + negative + 1) * sizeof(char));
+	if (s == NULL)
+		return (NULL);
 
-    if (s == NULL)
-        return (NULL);
+	if (n == 0)
+	{
+		s[0] = '0';
+		s[1] = '\0';
+		return (s);
+	}
 
-    if (n == 0)
-    {
-        s[0] = '0';
-        s[1] = '\0';
-        return s;
-    }
+	if (n == -2147483648)
+		return (ft_strdup("-2147483648"));
 
-    if (n == -2147483648)
-        return ft_strdup("-2147483648");
+	if (n < 0)
+	{
+		n = -n;
+		digits--;
+	}
 
-    if (negative)
-    {
-        s[0] = '-';
-        n = -n;
-    }
+	i = 1;
+	s[0] = '\0';
+	while (i < digits + 1)
+	{
+		s[i] = n % 10 + '0';
+		n = n / 10;
+		i++;
+	}
 
-    s[digits + negative] = '\0';
+	if (negative)
+		s[i] = '-';
 
-    while (digits > 0)
-    {
-        s[digits + negative - 1] = (n % 10) + '0';
-        digits--;
-        n /= 10;
-    }
-
-    return s;
+	ft_strrev(s, digits + 1 + negative);
+	return (s);
 }
-
-
-
