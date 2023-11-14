@@ -23,12 +23,14 @@
 
 char	*ft_strchr(const char *s, int c)
 {
+    int     i;
 	char	*result;
 
+    i = 0;
 	result = (char *) s;
-	while (*result != '\0' && c != *result)
+	while (result[i] != '\0' && c != result[i])
 		result++;
-	if (*result == c)
+	if (result[i] == c)
 		return (result);
 	return (NULL);
 }

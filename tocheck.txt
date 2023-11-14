@@ -1,8 +1,7 @@
 itoa : francniette dit que jai faux mais je vois pas
 ft_split
-last bonus
 tester si le makefile relink
-leaksanitizer in itoa and frputnbr
+leaksanitizer in itoa and frputnbr valgrind with origin
 
-check file names
 forbidden functions ? your libft is using forbidden functions so the result may not be relevant !
+fclean mon bonus,
