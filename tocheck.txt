@@ -1,7 +1,6 @@
-itoa : francniette dit que jai faux mais je vois pas
+itoa
 ft_split
-tester si le makefile relink
 leaksanitizer in itoa and frputnbr valgrind with origin
 
-forbidden functions ? your libft is using forbidden functions so the result may not be relevant !
-fclean mon bonus,
+forbidden functions - your libft is using forbidden functions so the result may not be relevant !
+lst_addback -> on cree une structure fictive pour ajouter a la fin ?

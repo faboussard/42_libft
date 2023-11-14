@@ -11,6 +11,7 @@
 /* ************************************************************************** */
 
 #include <stdlib.h>
+#include <stdio.h>
 #include "libft.h"
 
 //** DESCRIPTION:
@@ -21,7 +22,35 @@
 //**	ended by a NULL pointer.
 //*/
 
-static int count_words(const char *str, char c)
+size_t	index_start_word(const char *s1, const char *set)
+{
+    size_t	i;
+
+    i = 0;
+    while (s1[i] != '\0')
+    {
+        if (ft_strchr(set, s1[i]))
+            return (i);
+        i++;
+    }
+    return (i);
+}
+
+static size_t	index_end_word(const char *s1, const char *set)
+{
+    size_t	i;
+
+    i = ft_strlen(s1) - 1;
+    while (i > 0)
+    {
+        if (ft_strchr(set, s1[i]) == NULL)
+            return (i);
+        i--;
+    }
+    return (i);
+}
+
+static int count_letters(const char *str, char c)
 {
     int count;
     int is_word;
@@ -48,14 +77,39 @@ static int count_words(const char *str, char c)
 
 char **ft_split(char const *s, char c)
 {
-    size_t i = 0;
-    size_t j = 0;
-    int start = -1;
-    char **split;
+    size_t	start;
+    size_t	end;
+    size_t	len;
+    printf("sub str is %zu\n", len);
+    size_t i;
+    char    *s_copy;
+    char    **split;
 
+    i = 0;
+    end = index_end_word(s, &c);
+    printf("sub str is %zu\n", end);
+    start = index_start_word(s, &c);
+    printf("sub str is %zu\n", start);
+    len = (end - start) + 1;
+    printf("sub str is %zu\n", len);
+    split = malloc(sizeof(char *) * (count_letters(s, c) + 1));
+    if (split == NULL)
+        return (NULL);
 
+    s_copy = (char *)s;
+    while (s_copy[i] != '\0')
+    {
+        s_copy[i] = (*ft_substr(s, start, len) - 1);
+        printf("sub str is %s\n", s_copy[i]);
+        i++;
     }
-    split[j] = NULL;
+
+    while (i < (count_letters(s, c)))
+    {
+        split[i] = ft_strdup(&s_copy[i]);
+        i++;
+    }
+    split[i] = '\0';
     return split;
 }
 

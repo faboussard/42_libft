@@ -5,20 +5,20 @@
 
 void ft_lstadd_back_main()
 {
-	t_list *lst;
+	t_list *current;
 	t_list *new;
 
-	int *content_lst = malloc(sizeof (int));
+	int *content_current = malloc(sizeof (int));
 	int *content_new = malloc(sizeof(int));
 
-	*content_lst = 42;
+	*content_current = 42;
 	*content_new = 55;
 
-	lst = ft_lstnew(content_lst);
+    current = ft_lstnew(content_current);
 	new = ft_lstnew(content_new);
 
-	ft_lstadd_back(&lst, new);
-	printf("ft_lstadd_back is %d\n", *(int*)lst->next->content);
-	ft_lstdelone(lst, del);
+	ft_lstadd_back(&current, new);
+	printf("ft_lstadd_back is %d\n", *(int*)current->next->content);
+	ft_lstdelone(current, del);
 	ft_lstdelone(new, del);
 }

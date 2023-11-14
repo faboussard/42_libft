@@ -9,9 +9,9 @@ void    ft_substr_main()
 	char *issubstr = ft_substr(s1, 7, 3);
 	if (issubstr)
 	{
-	printf("ft_strjoin is %s\n", issubstr);
+	printf("ft_substr is %s\n", issubstr);
 	free(issubstr);
 	}
 	else
-	printf("allocation failed for ft_strjoin");
+	printf("allocation failed for ft_substr");
 }

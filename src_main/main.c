@@ -43,7 +43,7 @@ int main()
 	//ft_substr_main();
 	//ft_strjoin_main();
 	//ft_strtrim_main();
-	ft_itoa_main();
+	//ft_itoa_main();
 	//ft_strmapi_main();
 	//ft_striteri_main();
 	//ft_putstr_fd_main(); //&putnbr fd
@@ -58,7 +58,7 @@ int main()
 	//ft_lstiter_main();
 	//ft_strtrim_main();
 	//ft_atoi_main();
-	//ft_split_main();
+	ft_split_main();
 	//ft_lstmap_main();
 
 	return 0;
