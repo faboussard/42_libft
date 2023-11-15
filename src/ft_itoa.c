@@ -19,11 +19,12 @@
 
 #include <stdlib.h>
 
-static char *ft_strrev(char *str, int length)
+static char	*ft_strrev(char *str, int length)
 {
-	int i = -1;
+	int	i;
 	char temporary;
 
+	i = -1;
 	while (++i < length / 2)
 	{
 		temporary = str[i];
@@ -33,9 +34,9 @@ static char *ft_strrev(char *str, int length)
 	return (str);
 }
 
-static int ft_count_digits(int n)
+static int	ft_count_digits(int n)
 {
-	int count;
+	int	count;
 
 	if (n <= 0)
 		count = 1;
@@ -49,7 +50,7 @@ static int ft_count_digits(int n)
 	return (count);
 }
 
-static int is_negative(int n)
+static int	is_negative(int n)
 {
 	if (n < 0)
 		return (1);
@@ -57,34 +58,30 @@ static int is_negative(int n)
 		return (0);
 }
 
-char *ft_itoa(int n)
+char	*ft_itoa(int n)
 {
-	int digits;
-	int negative;
-	int i;
+	int	digits;
+	int	negative;
+	int	i;
 
 	digits = ft_count_digits(n);
 	negative = is_negative(n);
 	char *s = (char *) malloc((digits + negative + 1) * sizeof(char));
 	if (s == NULL)
 		return (NULL);
-
 	if (n == 0)
 	{
 		s[0] = '0';
 		s[1] = '\0';
 		return (s);
 	}
-
 	if (n == -2147483648)
 		return (ft_strdup("-2147483648"));
-
 	if (n < 0)
 	{
 		n = -n;
 		digits--;
 	}
-
 	i = 1;
 	s[0] = '\0';
 	while (i < digits + 1)
@@ -93,10 +90,8 @@ char *ft_itoa(int n)
 		n = n / 10;
 		i++;
 	}
-
 	if (negative)
 		s[i] = '-';
-
 	ft_strrev(s, digits + 1 + negative);
 	return (s);
 }
