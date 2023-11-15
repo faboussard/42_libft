@@ -76,7 +76,10 @@ char	*ft_itoa(int n)
 		return (s);
 	}
 	if (n == -2147483648)
-		return (ft_strdup("-2147483648"));
+	{
+		ft_strlcpy(s, "-2147483648", 12);
+		return (s);
+	}
 	if (n < 0)
 	{
 		n = -n;

@@ -13,17 +13,22 @@
 #include "libft.h"
 
 // returns a pointer to the last occurence of c
-
 char	*ft_strrchr(const char *s, int c)
 {
-	char	*result;
-	size_t	i;
+	int		i;
+	char	*char_not_const;
+	char	*last_occurrence;
 
-	result = (char *)s;
-	i = ft_strlen(result);
-	while (i > 0 && c != result[i])
-		i--;
-	if (result[i] == c)
-		return (&result[i]);
-	return (NULL);
+	i = 0;
+	last_occurrence = NULL;
+	char_not_const = (char *)s;
+	while (char_not_const[i] != '\0')
+	{
+		if (char_not_const[i] == (char)c)
+			last_occurrence = char_not_const;
+		char_not_const++;
+	}
+	if (*char_not_const == (char)c)
+		return (char_not_const);
+	return (last_occurrence);
 }

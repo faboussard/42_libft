@@ -13,20 +13,18 @@
 #include "libft.h"
 
 // returns a pointer on the first occurence of c
-char	*ft_memchr(const void *s, int c, size_t n)
+void	*ft_memchr(const void *s, int c, size_t n)
 {
-	size_t	i;
-	char	*byte;
+	size_t			i;
+	unsigned char	*byte;
 
 	i = 0;
-	byte = (char *) s;
+	byte = (unsigned char *)s;
 	while (i < n)
 	{
-		if (byte[i] == c)
-		{
-			return (&byte[i]);
-		}
+		if (byte[i] == (unsigned char)c)
+			return ((void *)&byte[i]);
 		i++;
 	}
-	return (0);
+	return (NULL);
 }
