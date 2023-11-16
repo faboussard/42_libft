@@ -1,4 +1,5 @@
 
+#include <glob.h>
 #include "../src/libft.h"
 #include "../includes/libft_main.h"
 
@@ -8,7 +9,7 @@
 	return *(size_t) n;
 }*/
 
-void ft_bezero_main()
+void    ft_bezero_main()
 {
 	char s0[] = "qwerty";
 	char s1[] = "qwerty";

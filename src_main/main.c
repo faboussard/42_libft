@@ -51,13 +51,13 @@ int main()
 	//ft_putnbr_fd_main();
 	//ft_lstnew_main();
 	//ft_lstadd_front_main();
-	ft_lstadd_back_main();
+	//ft_lstadd_back_main();
 	//ft_lstsize_main();
 	//ft_lstlast_main();
 	//ft_lstlast_main2();
 	//ft_lstiter_main();
 	//ft_strtrim_main();
-	//ft_atoi_main();
+	ft_atoi_main();
 	//ft_split_main();
 	//ft_lstmap_main();
 
