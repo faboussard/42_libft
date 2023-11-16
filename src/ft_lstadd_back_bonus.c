@@ -15,16 +15,17 @@
 void	ft_lstadd_back(t_list **lst, t_list *new)
 {
 	t_list	*last;
+    t_list  **temp;
 
-	if (lst != NULL)
+    temp = lst;
+	if (temp != NULL)
 	{
-		if (*lst != NULL)
+		while (*temp != NULL)
 		{
-			last = ft_lstlast(*lst);
-			last->next = new;
+                last = ft_lstlast(*lst);
+                last->next = new;
 		}
-		else
-			*lst = new;
+        *lst = new;
 	}
 	new->next = NULL;
 }

@@ -7,6 +7,7 @@
 
 #include <string.h>
 #include <stdio.h>
+#include <strings.h>
 
 void ft_atoi_main();
 void ft_isalpha_main();

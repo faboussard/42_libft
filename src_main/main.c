@@ -32,7 +32,7 @@ int main()
 	//ft_toupper_main();
 	//ft_tolower_main();
 	//ft_strchr_main();
-	ft_strrchr_main();
+	//ft_strrchr_main();
 	//ft_strncmp_main();
 	//ft_memchr_main();
 	//ft_memset_main();
@@ -51,7 +51,7 @@ int main()
 	//ft_putnbr_fd_main();
 	//ft_lstnew_main();
 	//ft_lstadd_front_main();
-	//ft_lstadd_back_main();
+	ft_lstadd_back_main();
 	//ft_lstsize_main();
 	//ft_lstlast_main();
 	//ft_lstlast_main2();

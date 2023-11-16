@@ -19,8 +19,6 @@ void	*ft_bzero(void *s, size_t n)
 
 	i = 0;
 	byte = (unsigned char *) s;
-	if (byte == NULL)
-		return (0);
 	while (i < n)
 	{
 		byte[i] = '\0';

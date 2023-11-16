@@ -10,7 +10,7 @@ void ft_itoa_main()
     char *string2;
 	char *string3;
 
-    string1 = ft_itoa(-350);
+    string1 = ft_itoa(-5859);
     string2 = ft_itoa(350);
 	string3 = ft_itoa(0);
 	if (string3) {

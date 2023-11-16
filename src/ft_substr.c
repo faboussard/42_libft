@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <malloc.h>
+#include <stdlib.h>
 #include "libft.h"
 
 static size_t	malloc_adjust(size_t len, size_t s_len, unsigned int start)
