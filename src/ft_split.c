@@ -60,6 +60,7 @@ char	**fill_array_with_strings(char **strs_array, const char *s, char c)
 			while (s[i + len] && s[i + len] != c)
 				len++;
 			strs_array[j] = ft_substr(s, i, len);
+            //ajouter le free all
 			j++;
 			i += len;
 		}
