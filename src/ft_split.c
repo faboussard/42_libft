@@ -20,9 +20,24 @@
 // as a delimiter. The array must be
 //**	ended by a NULL pointer.
 //*/
-static int	count_letters(const char *str, char c)
+
+static void	*ft_free_all_alloc(char **strs_array, size_t start)
 {
-	int	count;
+	size_t	i;
+
+	i = 0;
+	while (i < start)
+	{
+		free(strs_array[i]);
+		i++;
+	}
+	free(strs_array);
+	return (NULL);
+}
+
+static size_t	count_letters(const char *str, char c)
+{
+	size_t	count;
 	int	is_word;
 
 	count = 0;
@@ -59,8 +74,9 @@ char	**fill_array_with_strings(char **strs_array, const char *s, char c)
 			len = 0;
 			while (s[i + len] && s[i + len] != c)
 				len++;
-			strs_array[j] = ft_substr(s, i, len);
-            //ajouter le free all
+
+			if ((strs_array[j] = ft_substr(s, i, len)) == NULL)
+				return (ft_free_all_alloc(strs_array, j));
 			j++;
 			i += len;
 		}
@@ -75,9 +91,14 @@ char	**ft_split(char const *s, char c)
 {
 	char	**split;
 
-	split = (char **) malloc(sizeof(char *) * (count_letters(s, c) + 1));
-	if (split == NULL)
+	if (s == NULL)
 		return (NULL);
-	split = fill_array_with_strings(split, s, c);
+	if ((split = (char **)malloc(sizeof(char *) * (count_letters(s, c) + 1))) == NULL)
+		return (NULL);
+	if ((split = fill_array_with_strings(split, s, c)) == NULL)
+	{
+		free (split);
+		return (NULL);
+	}
 	return (split);
 }

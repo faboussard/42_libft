@@ -6,48 +6,48 @@
 /*   By: faboussa <faboussa@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/11 08:46:22 by faboussa          #+#    #+#             */
-/*   Updated: 2023/11/13 01:40:59 by faboussa         ###   ########.fr       */
+/*   Updated: 2023/11/17 19:44:17 by faboussa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 
-void ft_whitespace(const char *string)
+const char*	ft_whitespace(const char *string)
 {
-    while (*string == ' ' || *string == '\n' || *string == '\t'
-           || *string == '\v' || *string == '\r' || *string == '\f')
-        string++;
-}
+	int	i;
 
-int ft_sign(const char *string)
-{
-    int sign;
-
-    sign = 1;
-    if (*string == '-' || *string == '+')
-    {
-        if (*string == '-')
-            sign *= -1;
-    }
-    return (sign);
-}
-
-int ft_atoi(const char *string)
-{
-    long res;
-    int i;
-    int sign;
-
-	sign = ft_sign(string);
-    i = 0;
-	res = 0;
-    if (ft_sign(string) < 0)
+	i = 0;
+	while (*(string + i) == ' ' || *(string + i) == '\n' || *(string + i) == '\t'
+		   || *(string + i) == '\v' || *(string + i) == '\r' || *(string + i) == '\f')
 		i++;
-    while (string[i] >= '0' && string[i] <= '9')
-    {
-        if (res != ((res * 10 - string[i] + '0') / 10))
-            return (-1 * (sign > 0));
+	return (string + i);
+}
+
+int	ft_sign(const char *string)
+{
+	int sign;
+
+	sign = 1;
+	if (*string == '-')
+		sign *= -1;
+	return (sign);
+}
+
+int	ft_atoi(const char *string)
+{
+	int	res;
+	int	i;
+	int	sign;
+
+	i = 0;
+	res = 0;
+	string = ft_whitespace(string);
+	sign = ft_sign(string);
+	if (string[i] == '-' || string[i] == '+')
+		i++;
+	while (string[i] >= '0' && string[i] <= '9')
+	{
 		res = res * 10 + (string[i] - '0');
-        i++;
-    }
-    return (int)(res * sign);
+		i++;
+	}
+	return (res * sign);
 }

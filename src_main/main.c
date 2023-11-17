@@ -57,9 +57,9 @@ int main()
 	//ft_lstlast_main2();
 	//ft_lstiter_main();
 	//ft_strtrim_main();
-	//ft_atoi_main();
+	ft_atoi_main();
 	//ft_split_main();
-	ft_lstmap_main();
+	//ft_lstmap_main();
 
 	return 0;
 }

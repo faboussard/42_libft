@@ -21,7 +21,7 @@ void	ft_lstadd_back(t_list **lst, t_list *new)
 		if (*lst != NULL)
 		{
 			last = ft_lstlast(*lst);
-			if (last)
+			if (last != NULL)
 				last->next = new;
 		}
 		else
