@@ -16,4 +16,8 @@ void ft_atoi_main()
     printf("atoi is %d\n", atoi("-2147483649"));
     printf("ft_atoi is %d\n", ft_atoi("2147483649"));
     printf("atoi is %d\n", atoi("2147483649"));
+	printf("ft_atoi is %d\n", ft_atoi("3000000000000"));
+	printf("atoi is %d\n", atoi("3000000000000"));
+	printf("ft_atoi is %d\n", ft_atoi("-3000000000000"));
+	printf("atoi is %d\n", atoi("-3000000000000"));
 }

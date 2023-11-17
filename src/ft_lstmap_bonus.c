@@ -17,23 +17,27 @@
 // Creates a new list resulting of the successive applications of
 //the function ’f’.
 // The ’del’ function is used to delete the content of a node if needed
-t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
-{
-	t_list	*new_list;
+//t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 
-	if (lst == NULL || f == NULL || del == NULL)
+t_list *ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
+{
+	t_list *new_list;
+	t_list *new_node;
+
+	new_list = NULL;
+	if (f == NULL || del == NULL)
 		return (NULL);
-	new_list = ft_lstnew(f(lst->content));
-	while (lst->next != NULL)
+
+	while (lst != NULL)
 	{
-		lst = lst->next;
-		new_list->next = ft_lstnew(f(lst->content));
-		if (new_list->next == NULL)
+		if ((new_node = ft_lstnew(f(lst->content))) == NULL)
 		{
-            ft_lstclear(&new_list, del);
+			ft_lstclear(&new_list, del);
 			return (NULL);
 		}
-		new_list = new_list->next;
+		ft_lstadd_back(&new_list, new_node);
+		lst = lst->next;
 	}
+
 	return (new_list);
 }
