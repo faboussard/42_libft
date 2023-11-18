@@ -10,21 +10,23 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-
-const char*	ft_whitespace(const char *string)
+const char	*ft_whitespace(const char *string)
 {
 	int	i;
 
 	i = 0;
-	while (*(string + i) == ' ' || *(string + i) == '\n' || *(string + i) == '\t'
-		   || *(string + i) == '\v' || *(string + i) == '\r' || *(string + i) == '\f')
+	while (*(string + i) == ' ' || *(string + i) == '\n'
+		|| *(string + i) == '\t'
+		|| *(string + i) == '\v'
+		|| *(string + i) == '\r'
+		|| *(string + i) == '\f')
 		i++;
 	return (string + i);
 }
 
 int	ft_sign(const char *string)
 {
-	int sign;
+	int	sign;
 
 	sign = 1;
 	if (*string == '-')

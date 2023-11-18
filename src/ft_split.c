@@ -38,7 +38,7 @@ static void	*ft_free_all_alloc(char **strs_array, size_t start)
 static size_t	count_letters(const char *str, char c)
 {
 	size_t	count;
-	int	is_word;
+	int		is_word;
 
 	count = 0;
 	is_word = 0;
@@ -74,8 +74,8 @@ char	**fill_array_with_strings(char **strs_array, const char *s, char c)
 			len = 0;
 			while (s[i + len] && s[i + len] != c)
 				len++;
-
-			if ((strs_array[j] = ft_substr(s, i, len)) == NULL)
+			strs_array[j] = ft_substr(s, i, len);
+			if (strs_array[j] == NULL)
 				return (ft_free_all_alloc(strs_array, j));
 			j++;
 			i += len;
@@ -93,9 +93,11 @@ char	**ft_split(char const *s, char c)
 
 	if (s == NULL)
 		return (NULL);
-	if ((split = (char **)malloc(sizeof(char *) * (count_letters(s, c) + 1))) == NULL)
+	split = malloc(sizeof(char **) *(count_letters(s, c) + 1));
+	if (split == NULL)
 		return (NULL);
-	if ((split = fill_array_with_strings(split, s, c)) == NULL)
+	split = fill_array_with_strings(split, s, c);
+	if (split == NULL)
 	{
 		free (split);
 		return (NULL);

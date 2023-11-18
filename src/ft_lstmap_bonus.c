@@ -10,6 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <malloc.h>
 #include "libft.h"
 
 //Iterates the list ’lst’ and applies the function
@@ -17,31 +18,25 @@
 // Creates a new list resulting of the successive applications of
 //the function ’f’.
 // The ’del’ function is used to delete the content of a node if needed
-//t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 
-t_list *ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
+t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 {
-	t_list *new_list;
-	t_list *new_node;
+	t_list	*new_list;
+	t_list	*new_node;
 
 	new_list = NULL;
 	if (f == NULL || del == NULL)
 		return (NULL);
-
 	while (lst != NULL)
 	{
-		if ((new_node = ft_lstnew(f(lst->content))) == NULL)
+		new_node = ft_lstnew(f(lst->content));
+		if (new_node == NULL)
 		{
-//			ft_lstclear(&lst, del);
 			ft_lstclear(&new_node, del);
-			ft_lstdelone(new_node, del);
-//			ft_lstdelone(lst, del);
-			ft_lstclear(&new_list, del);
-			return (NULL);
+			return (new_list);
 		}
 		ft_lstadd_back(&new_list, new_node);
 		lst = lst->next;
 	}
-
 	return (new_list);
 }

@@ -12,11 +12,11 @@
 
 #include "libft.h"
 
-void	ft_lstadd_front(t_list **lst, t_list *new)//on envoie pointeur sur pointeur car on veut lui donner une autre adresse, puis on garde le meme prototypage pour pushback
+void	ft_lstadd_front(t_list **lst, t_list *new)
 {
 	if (lst != NULL)
 	{
-		if (*lst != NULL)//pas besoin de parcourir, on pointe sur le premier
+		if (*lst != NULL)
 			new->next = *lst;
 		*lst = new;
 	}
