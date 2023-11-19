@@ -17,19 +17,20 @@
 #include <stdlib.h>
 #include "libft.h"
 
-static	char	*ft_digits_tranform(char *s, int digits, int n)
+static	char	*ft_digits_tranform(/*char *string,*/ int digits, int n)
 {
-	int	i;
+    char *s;
+    int i;
 
-	i = 1;
-	s[0] = '\0';
+    i = 1;
+    s = malloc(sizeof (char) *4);
 	while (i < digits + 1)
 	{
-		*(s + i) = n % 10 + '0';
+        s[i] = n % 10 + '0';
 		n = n / 10;
 		i++;
 	}
-	return (s + i);
+	return (s);
 }
 
 static char	*ft_strrev(char *str, int length)
@@ -74,14 +75,14 @@ static int	is_negative(int n)
 	else
 		return (0);
 }
-
 char	*ft_itoa(int n)
 {
 	int		digits;
 	int		negative;
-	int		i;
+    int		i;
 	char	*s;
 
+    i = 0;
 	if (n == -2147483648)
 	{
 		s = ft_strdup("-2147483648");
@@ -103,8 +104,9 @@ char	*ft_itoa(int n)
 		n = -n;
 		digits--;
 	}
-	i = 0;//faux !
-	s = ft_digits_tranform(s, digits, n);
+    s[0] = '\0';
+	s = ft_digits_tranform(digits, n);
+    i = ft_strlen(s);
 	if (negative)
 		s[i] = '-';
 	ft_strrev(s, digits + 1 + negative);
