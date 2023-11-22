@@ -1,6 +1,0 @@
-itoa
-ft_split
-leaksanitizer in itoa and frputnbr valgrind with origin
-
-forbidden functions - your libft is using forbidden functions so the result may not be relevant !
-lst_addback -> on cree une structure fictive pour ajouter a la fin ?
