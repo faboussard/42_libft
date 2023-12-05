@@ -14,6 +14,10 @@
 # define LIBFT_H
 
 # include <stddef.h>
+# include <limits.h>
+# include <stdarg.h>
+# include <stdlib.h>
+# include <unistd.h>
 
 typedef struct s_list
 {
@@ -64,5 +68,12 @@ void	ft_lstiter(t_list *lst, void (*f)(void *));
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));
 void	ft_putchar_fd(char c, int fd);
 char	**ft_split(char const *s, char c);
+int		ft_printf(const char *s, ...);
+size_t	ft_strlen(const char *string);
+size_t	ft_putchar(int c);
+size_t	ft_putstr(char *s);
+size_t	ft_print_and_count_int(int n, const char *base);
+size_t	ft_print_and_count_unsigned_long(unsigned long int n, const char *base);
+size_t	ft_print_and_count_unsigned_int(unsigned int n, const char *base);
 
 #endif // LIBFT_H
