@@ -6,7 +6,7 @@
 /*   By: faboussa <faboussa@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/13 02:08:53 by faboussa          #+#    #+#             */
-/*   Updated: 2023/11/13 02:08:53 by faboussa         ###   ########.fr       */
+/*   Updated: 2023/12/05 16:53:22 by faboussa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,5 +14,5 @@
 
 void	ft_putchar_fd(char c, int fd)
 {
-	return (write(fd, &c, 1));
+	write(fd, &c, 1);
 }

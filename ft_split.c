@@ -6,7 +6,7 @@
 /*   By: faboussa <faboussa@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/12 21:04:58 by faboussa          #+#    #+#             */
-/*   Updated: 2023/11/21 06:45:51 by faboussa         ###   ########.fr       */
+/*   Updated: 2023/12/10 16:43:33 by faboussa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,6 +27,20 @@ static void	*ft_free_all_alloc(char **strs_array, size_t start)
 	return (NULL);
 }
 
+
+static size_t count_letters(const char *str, char c)
+{
+	size_t count = 0;
+	while (*str != '\0')
+	{
+		if (*str != c)
+			count++;
+		str++;
+	}
+	return count;
+}
+
+/*
 static size_t	count_letters(const char *str, char c)
 {
 	size_t	count;
@@ -50,7 +64,7 @@ static size_t	count_letters(const char *str, char c)
 	}
 	return (count);
 }
-
+*/
 static char	**fill_array_with_strings(char **strs_array, const char *s, char c)
 {
 	size_t	i;

@@ -6,7 +6,7 @@
 /*   By: faboussa <faboussa@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/11 08:46:22 by faboussa          #+#    #+#             */
-/*   Updated: 2023/11/21 06:43:47 by faboussa         ###   ########.fr       */
+/*   Updated: 2023/12/10 14:28:18 by faboussa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,11 +43,11 @@ char	*ft_itoa(int n)
 	s = malloc(sizeof(char) * (len + 1));
 	if (s == NULL)
 		return (NULL);
-	s[len] = 0;
+	s[len] = '\0';
 	while (len--)
 	{
 		s[len] = nb % 10 + '0';
-		nb = nb / 10;
+		nb /= 10;
 	}
 	if (n < 0)
 		s[0] = '-';
