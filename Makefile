@@ -63,7 +63,7 @@ all: $(NAME)
 $(NAME): $(OBJECTS)
 	ar -rc $(NAME) $(OBJECTS)
 
-%.o: %.c  libft.h
+%.o: %.c  inc/libft.h
 	cc -Wall -Wextra -Werror -MMD -MP -c $<
 
 clean:
