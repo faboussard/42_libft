@@ -12,6 +12,7 @@
 
 #include <stdlib.h>
 #include "../../inc/libft.h"
+#include  <stdio.h>
 
 t_list	*ft_lstnew(int *content)
 {
