@@ -1,7 +1,7 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstclear_bonus.c                                :+:      :+:    :+:   */
+/*   ft_lstdelone_bonus.c                               :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: faboussa <faboussa@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
@@ -13,17 +13,13 @@
 #include "../../inc/libft.h"
 #include <stdlib.h>
 
-void	ft_lstclear(t_list **lst, void (*del)(void*))
+void	ft_lstdelone_node(t_list *lst, void (*del)(void *))
 {
-	t_list	*temp;
-
-	if (lst == NULL)
+	if (del == NULL)
 		return ;
-	while (*lst != NULL)
+	if (lst != NULL)
 	{
-		temp = *lst;
-		*lst = (*lst)->next;
-		(*del)(temp->content);
-		free(temp);
+		del(lst->content);
+		free(lst);
 	}
 }
