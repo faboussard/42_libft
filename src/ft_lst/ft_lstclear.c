@@ -13,9 +13,9 @@
 #include "../../inc/libft.h"
 #include <stdlib.h>
 
-void	ft_lstclear(t_list **lst, void (*del)(void*))
+void	ft_lstclear(t_node **lst, void (*del)(void*))
 {
-	t_list	*temp;
+	t_node	*temp;
 
 	if (lst == NULL)
 		return ;
